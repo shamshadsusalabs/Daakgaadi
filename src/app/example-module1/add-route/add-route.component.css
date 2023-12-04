@@ -1,0 +1,85 @@
+/* Style the container for pickup and drop information */
+.flex-wrap{
+    position: absolute;
+    left: 40%;
+    top:15%;
+}
+#bookingSection .cont {
+    width: 400px;
+}
+
+/* Style the curvy box */
+#bookingSection .curvy-box {
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* Style the form labels */
+#bookingSection label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Style the form select elements */
+#bookingSection select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+/* Style the amount and estimate delivery days input fields */
+#bookingSection .inp {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+/* Style the button */
+#bookingSection button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Adjust the position of Pickup City and Drop City */
+#bookingSection .row > div:nth-child(2),
+#bookingSection .row > div:nth-child(4) {
+    width: 100%; /* Set to 100% to make them fit within the box */
+    margin-bottom: 10px;
+}
+
+/* Add some spacing between elements */
+#bookingSection .row > * {
+    margin-right: 20px;
+}
+
+#bookingSection .row > :last-child {
+    margin-right: 0;
+}
+
+
+.container-fluid{
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top:100%;
+  }
+  .filter{
+    position: relative;
+    top: 100%;
+    left: 0%;
+    margin-bottom: 2%;
+  }
+
+  .main{
+    position: absolute;
+    top:5%;
+  }

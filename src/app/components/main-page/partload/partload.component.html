@@ -1,0 +1,483 @@
+
+
+
+  <h1 class="text-center">Partload</h1>
+  
+
+ <div class="flex flex-wrap items-center" id="bookingSection" style="min-width: 250px ;" >
+  <div class="w-full md:w-5/12 px-4 mr-auto ml-auto" style="margin-top: 100px;margin-bottom: 100px; min-width: 250px ;">
+    <h3 style="font-size: 40px; text-align: left;">Calculate Rate</h3> 
+    <div class="cont">
+      <div class="curvy-box">
+
+      <div class="row" style="width: 600px">
+        
+        <div style="width: 200px;">
+
+
+             
+          <label for="pickup">Pickup State:</label>
+          <select
+          id="ddlViewBy"  
+          class="form-control"
+          name="pstate" ngModel  [(ngModel)]="pselectedState1" (change)="onStateChange1()" required
+          style="width: 110px; height:  28px; font-size: 11px;"
+          >
+          <option value="Andhra pradesh">Andhra Pradesh</option>
+          <option value="Andhra pradesh">Andhra Pradesh</option>
+          <option value="Arunachal pradesh">Arunachal Pradesh</option>
+          <option value="Assam">Assam</option>
+          <option value="Andaman and Nicobar">Andaman and Nicobar</option>
+          <option value="Bihar">Bihar</option>
+          <option value="Chhattisgarh">Chhattisgarh</option>
+          <option value="Chhattisgarh">Chandigarh</option>
+          <option value="Goa">Goa</option>
+          <option value="Gujarat">Gujarat</option>
+          <option value="Haryana">Haryana</option>
+          <option value="Delhi">Delhi</option>
+          <option value="Daman and Diu">Daman and Diu</option>
+          <option value="HimachalPradesh">Himachal Pradesh</option>
+          <option value="JammuandKashmir">Jammu and Kashmir</option>
+          <option value="Jharkhand">Jharkhand</option>
+          <option value="karnataka">Karnataka</option>
+          <option value="kerala">Kerala</option>
+          <option value="Ladakh">Ladakh</option>
+          <option value="Lakshadweep">Lakshadweep</option>
+          <option value="MadhyaPradesh">Madhya Pradesh</option>
+          <option value="Maharashtra">Maharashtra</option>
+          <option value="Manipur">Manipur</option>
+          <option value="Meghalaya">Meghalaya</option>
+          <option value="Mizoram">Mizoram</option>
+          <option value="Nagaland">Nagaland</option>
+          <option value="Odisha">Odisha</option>
+          <option value="Puducherry">Puducherry</option>
+          <option value="Punjab">Punjab</option>
+          <option value="Rajasthan">Rajasthan</option>
+          <option value="Sikkim">Sikkim</option>
+          <option value="Tamilnadu">Tamil Nadu</option>
+          <option value="Telangana">Telangana</option>
+          <option value="Tripura">Tripura</option>
+          <option value="Uttarpradesh">Uttar Pradesh</option>
+          <option value="Uttarakhand">Uttarakhand</option>
+          <option value="Westbengal">West Bengal</option>
+        </select>
+        </div>
+
+    
+
+      
+
+        <div style="width: 200px;">
+          <label for="pickup">Pickup City:</label>
+          <select
+          id="ddlViewBy"  
+          class="form-control"
+          name="pcity" [(ngModel)]="pselectedCity1" required
+          style="width: 110px; height:  28px; font-size: 11px;"
+          >
+          <option *ngFor="let city of pfilteredCities1" [ngValue]="city.pcity">{{ city.pcity }}</option>
+        </select>
+           
+        </div>
+
+        
+        <div class="row" style="width: 700px">
+
+          <div style="width: 200px;">
+          <label for="drop">Delivery State:</label>
+          <select
+          id="ddlViewBy"  
+          class="form-control"
+          name="dstate"  [(ngModel)]="dselectedState1" (change)="donStateChange1()" ngModel  required
+          style="width: 110px; height:  28px; font-size: 11px;"
+          >
+          <option value="Andhra pradesh">Andhra Pradesh</option>
+          <option value="Arunachal pradesh">Arunachal Pradesh</option>
+          <option value="Assam">Assam</option>
+          <option value="Andaman and Nicobar">Andaman and Nicobar</option>
+          <option value="Bihar">Bihar</option>
+          <option value="Chhattisgarh">Chhattisgarh</option>
+          <option value="Chhattisgarh">Chandigarh</option>
+          <option value="Goa">Goa</option>
+          <option value="Gujarat">Gujarat</option>
+          <option value="Haryana">Haryana</option>
+          <option value="Delhi">Delhi</option>
+          <option value="Daman and Diu">Daman and Diu</option>
+          <option value="HimachalPradesh">Himachal Pradesh</option>
+          <option value="JammuandKashmir">Jammu and Kashmir</option>
+          <option value="Jharkhand">Jharkhand</option>
+          <option value="karnataka">Karnataka</option>
+          <option value="kerala">Kerala</option>
+          <option value="Ladakh">Ladakh</option>
+          <option value="Lakshadweep">Lakshadweep</option>
+          <option value="MadhyaPradesh">Madhya Pradesh</option>
+          <option value="Maharashtra">Maharashtra</option>
+          <option value="Manipur">Manipur</option>
+          <option value="Meghalaya">Meghalaya</option>
+          <option value="Mizoram">Mizoram</option>
+          <option value="Nagaland">Nagaland</option>
+          <option value="Odisha">Odisha</option>
+          <option value="Puducherry">Puducherry</option>
+          <option value="Punjab">Punjab</option>
+          <option value="Rajasthan">Rajasthan</option>
+          <option value="Sikkim">Sikkim</option>
+          <option value="Tamilnadu">Tamil Nadu</option>
+          <option value="Telangana">Telangana</option>
+          <option value="Tripura">Tripura</option>
+          <option value="Uttarpradesh">Uttar Pradesh</option>
+          <option value="Uttarakhand">Uttarakhand</option>
+          <option value="Westbengal">West Bengal</option>
+        </select>
+          </div>
+        
+
+         <div style="width: 200px;">
+          <div style="width: 200px;" >
+<label for="drop">Delivery City</label>
+          <select
+          id="ddlViewBy"  
+          class="form-control"
+          name="dcity" [(ngModel)]="dselectedCity1" (change)="donStateChange1()" required
+          style="width: 110px; height:  28px; font-size: 11px;"
+          >
+          <option *ngFor="let city of dfilteredCities1" [ngValue]="city.dcity">{{ city.dcity }}</option>
+
+        </select>
+          </div>
+          
+         
+
+        </div>
+
+
+        </div>
+
+        
+      
+        
+       
+
+
+       
+      </div>
+
+       
+           <br>
+          
+
+    
+
+
+
+         <label class="lbl" for="email">ESTIMATED DELIVERY DAYS:<span style="padding-left: 15px; font-size: 22px;" *ngFor="let item of selectedData">{{ item.days }} days</span></label>
+         <label class="lbl" for="email" >DELIVERY TYPE:  <span style="padding-left: 15px; font-size: 22px;" *ngFor="let item of selectedData">{{ item.type }} </span> </label>
+
+
+         <label for="pickup">Product List:</label>
+         <select
+         id="ddlViewBy"  
+         class="form-control"
+         [(ngModel)]="selectedproduct"
+         style="width: 110px; height:  28px; font-size: 11px;" required
+         >
+          <option  value="HOUSEHOLD">
+            HOUSEHOLD
+         </option>
+         <option  value="BIKE">
+          BIKE
+       </option>
+       <option  value="BOX">
+        BOX
+     </option>
+     <option  value="APPAREL">
+      APPAREL
+   </option>
+          <option  value="AUTO PARTS">
+            AUTO PARTS
+   </option>
+   <option  value="CHEMICALS">
+    CHEMICALS
+</option>
+<option  value="CHEMICALS">
+CLOTHING
+</option>
+<option  value="E-COMMERCE">
+E-COMMERCE
+
+</option>
+<option  value="ELECTRONICS">
+ELECTRONICS
+
+</option>
+<option  value="ELECTRICALS">
+ELECTRICALS
+
+</option>
+<option  value="INDUSTRIAL GOODS">
+INDUSTRIAL GOODS
+</option>
+<option  value="MEDICINES">
+MEDICINES
+</option>
+<option  value="HANDICRAFTS">
+HANDICRAFTS
+</option>
+<option  value="PACKAGING MATERIALS">
+PACKAGING MATERIALS
+
+</option>
+<option  value="PLASTIC PRODUCTS">
+PLASTIC PRODUCTS
+
+</option>
+<option  value="WOODEN PRODUCTS">
+  WOODEN PRODUCTS
+
+  
+  </option>
+  <option  value="WHITE GOODS">
+    WHITE GOODS
+
+
+    
+    </option>
+    <option  value="SPORTS EQUIPMENT">
+      SPORTS EQUIPMENT
+
+      </option>
+      <option  value="HARDWARE">
+        HARDWARE
+
+        </option>
+        <option vlaue="OTHERS">
+          OTHERS
+        </option>
+       </select>
+
+         <!-- <label class="lbl" for="email">Email  * :</label>
+        <input class="inp" type="email" id="email" [(ngModel)]="email"  required/>
+        <label class="lbl" for="contact">Contact  * :</label>
+        <input class="inp" type="text" id="contact" [(ngModel)]="contact"  required/>  -->
+
+
+
+                                  <!--mycode-->
+         <div>
+          <label >Email  * :</label>
+
+          <input type="text" placeholder="enter email" name="email1" id="email1" [(ngModel)]="email1" class="form-control"> 
+        </div>
+        <div>
+          <label class="lbl" for="email">contact * :</label>
+
+          <input type="text" placeholder="enter number" name="number1" id="number1" [(ngModel)]="number1" class="form-control">
+        </div> 
+
+
+                          <!--mycode-->
+
+
+
+
+
+
+
+
+   <!-- <div   *ngFor="let box of boxno;let i = index"       >
+          <p style="font-size: 12px; margin-top: 10px;">Box #{{i+1}}</p>
+
+          <div class="input-row">
+            <label class="lbl" for="length">Length (in):</label>
+            <input class="inp"  min="0"  type="number" id="length"   [(ngModel)]="box.length"/>
+  
+            <label class="lbl" for="breadth">Breadth (in):</label>
+            <input class="inp"  min="0" type="number" id="breadth"  [(ngModel)]="box.breadth"/>
+  
+            <label class="lbl" for="height">Height (in):</label> 
+            <input class="inp"   min="0" type="number" id="height"  [(ngModel)]="box.height"/>
+          </div> 
+  
+          <label class="lbl" for="actual">Actual Weight (Per Box in Kg):</label>
+          <input class="inp"   min="0" type="number" id="actual"  [(ngModel)]="box.actual" />
+
+          <label class="lbl" for="boxes">no. of Boxes</label>
+          <input class="inp"   min="0" type="number" id="boxes"   [(ngModel)]="box.boxes" />
+          
+          
+          
+        </div>
+
+        <div class="row" style="align-self: flex-end;">
+          <div   *ngIf="boxno.length<20"  (click)="addbox()"  style="width: 50px; background-color :greenyellow;"> +  </div>
+          <div   style="width: 100px;"> Boxes</div>
+
+          <div  *ngIf="boxno.length>1" (click)="removebox()"   style="width: 50px; background-color: red;">- </div>
+
+          
+  
+        </div>
+
+
+        <button (click)="calculateEstimated()" >Calculate Estimate</button>
+        <p style="padding: 12px;" id="estimateResult">kg.{{ totalweight | number : '1.2-2' }}</p>
+        
+    <p style="padding: 12px;" id="priceResult">Estimated Price: Rs{{ totalamount | number : '1.2-2'}}</p> 
+
+       
+        
+
+      
+       <p style="padding: 12px;" id="priceResult">Total Amount: Rs{{ totalamount | number : '1.2-2' }} </p>
+       -->
+
+       
+ 
+
+
+          <!-- mycode -->
+
+   <div>
+
+  <div *ngFor="let box of boxess; let i = index">
+    <h3 style="color:greenyellow">Box {{ i + 1 }}</h3>
+    <div>
+      <label for="length">Length (inches):</label>
+      <input type="number" id="length" name="lenght" [(ngModel)]="box.length" class="form-control" />
+    </div>
+    <div>
+      <label for="width">Width (inches):</label>
+      <input type="number" id="width" name="width" [(ngModel)]="box.width"  class="form-control"/>
+    </div>
+    <div>
+      <label for="height">Height (inches):</label>
+      <input type="number" id="height"  name="height" [(ngModel)]="box.height"  class="form-control"/>
+    </div>
+    <div>
+      <label for="numBoxes">Number of Boxes:</label>
+      <input type="number" id="numBoxes" id="numBoxes" [(ngModel)]="box.numBoxes"  class="form-control"/>
+    </div>
+    <div>
+      <label for="actualWeight">Actual Weight (Per Box in kg):</label>
+      <input type="number" id="actualWeight"  name="actualWeight" [(ngModel)]="box.actualWeight"  class="form-control"/>
+    </div>
+    <div *ngIf="box.volumetricWeight">
+      <p>Volumetric Weight: {{ box.volumetricWeight | number: '1.2-2'}} kg</p>
+    </div>
+    <div>
+      <p name="actualWeight">Actual Weight: {{ box.actualWeight * box.numBoxes }} kg</p>
+    </div>
+    <div *ngIf="box.rate">
+      <p name="rate">Rate:₹ {{ box.rate | number: '1.2-2'}}</p>
+    </div>
+    <button  style="background-color: blue; width: 100%;"(click)="calculateEstimated(box)">Calculate</button>
+    <br>
+    <button style="background-color: green; " (click)="addBox()">Add Box</button>
+    <button style="background-color: red; "(click)="removeBox(i)">Remove Box</button>
+    <!-- <button (click)="calculateVolumetricWeightAndRate(box)">Calculate</button> -->
+  </div>
+  <div>
+    <!-- <p>Total Actual Weight: {{ totalActualWeight }} kg</p> -->
+    <p name="totalRate">Total Rate: ₹{{ totalRate | number: '1.2-2'}}</p>
+  </div>
+  <!-- <button (click)="addBox()">Add Box</button> -->
+
+</div> 
+
+
+<!--code-->
+
+<div>
+  <button (click)="toggleForm()">BookNow</button>
+  <div *ngIf="showForm">
+    <form [formGroup]="bookingForm"  >
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" formControlName="name"  class="form-control" />
+      
+    </div>
+    <div>
+      <label for="email" >Email:</label>
+      <input type="email" id="email" name="email" formControlName="email"  class="form-control" />
+      
+    </div>
+    <div>
+      <label for="paddress">PICK UP ADDRESS:</label>
+      <input type="text" id="paddress" name="paddress"  formControlName="paddress"class="form-control"/>
+     
+    </div>
+    <div>
+      <label for="daddress">DELIVERY ADDRESS:</label>
+      <input type="daddress" id="daddress"  name="daddress" formControlName="daddress" class="form-control"/>
+     
+    </div>
+    <div>
+      <label for="date">PICKUP DATE</label>
+      <input type="date" id="date" id="date" formControlName="date" class="form-control"/>
+     
+    </div>
+    <div>
+      <label for="anumber">ALTERNATE NUMBER</label>
+      <input type="anumber" id="anumber" id="anumber"  formControlName="anumber" class="form-control"/>
+     
+    </div>
+    <div>
+      <label for="md">MATERIAL DESCRIPTION</label>
+      <input type="text" id="md" id="md"  formControlName="md" class="form-control"/>
+      
+    </div>
+    
+    <div>
+      <label for="gv">GOODS VALUE</label>
+      <input type="text" id="gv" id="gv" formControlName="gv" class="form-control"/>
+    </div>
+<br>
+<label for="termsAndConditionsCheckbox"></label>
+  <input type="checkbox" (change)="onCheckboxChange($event)"> I agree to the terms and conditions
+  <br>
+  <a (click)="toggleForm1()" style="color:blue">see term and condition</a>
+  <div *ngIf="showForm1">
+    <p>Terms & Conditions:      Note::
+
+      * Transit Time: Transit excludes the date of booking.
+      The following goods are not acceptable for movement - Jewelry, Arms & Ammunition, 
+      Hazardous materials like Crackers, Explosives, Chemicals, Battery Acids, and Inflammable Oils; 
+      such as Diesel, Petrol, Kerosene, Gasoline, Narcotics & Counter brand Items.
+      
+      * Freight Refund: The Refund of freight may be entertained subject to Force Majeures such as Strikes Bandh, Elections, Rains, Flood, Accidents, Festivals and other natural calamities and any other events beyond the control of Daak Gaadi etc. , including the routine and or sudden inspection carried out by the Authorities of the concerned departments such as Excise, Customs, Sales Tax, Gold Control, NDPS, Municipal, RTA, and any other authorities competent to inspect goods along with vehicle, which is beyond the control of Daak Gaadi.
+       Your Price: The rates shown are indicative and not the final price. It includes Freight, ROV, Basic, DPH/ATF, Non-Metro, and ESS charges. The final price would depend on the exact volume, the value of the shipment and if any special service charges, etc. The charges are exclusive of Taxes
+       Household goods  & Bikes Packing, Loading, and Local Pickup Charges are extra. bike packing Charges Rs. 500 & per box Rs.150 , docket charges 500.  local pickup charges 1500 bikes and household goods. GST 18 and Surcharge 10 Percent extra on Total Billing.
+      We take complete 1 days for packing and loading. Please
+      keep all your valuable items like: Cash,Jewellery,Your personal documents in your custody. Pefect Box,
+      Plastic foldable box, plastic crates, LED Box, Fabric sheet and all Reusable packing materials are the
+      property of the DAAK GAADI.after unpacking these would be taken back. Otherwise, equivalent cost of
+      materials will be recovered from the client. All Payment in favour of M/S DAAK GAADI. We would
+      request to pay us 50% of the all charges in advance along with your order and the balance on complete
+      packing at the loading point. Law and Jurisdiction: This contract shall be governed and construed in accordance with the law of
+      India and all disputes and claims are subject to the exclusive and irrevocable jurisdiction of the Court in Gurugram Haryana only and no other court shall have jurisdiction.   For further Terms and Conditions please refer to Daak Gaadi Docket's Terms and Conditions.</p>
+  </div>
+
+  <br>
+
+
+
+
+     <button type="submit"  
+   (click)="submitForm(bookingForm.value)"> confirm Book</button>
+    </form>
+    <div>
+  </div>
+</div>
+<!-- <button (click)="sendConfirmationEmail()">Confirm Booking</button>  -->
+
+
+        <!-- <button (click)="sendConfirmationEmail()">Confirm Booking</button> -->
+      </div>
+    </div>
+
+</div>
+
+
+ </div>
+
+ <!-- <h4 class="text-center">Note::</h4>
+ <h5 class="text-center">Transit Time:</h5> -->

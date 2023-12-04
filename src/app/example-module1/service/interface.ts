@@ -1,0 +1,66 @@
+export interface Rate {
+    id?: string;
+    rate1: number;
+    rate2:number;
+    rate3: number;
+    rate4:number;
+    rate5: number;
+    rate6:number;
+    rate7: number;
+    rate8:number;
+     rate9: number;
+    rate10:number;
+    rate11: number;
+    rate12:number;
+    rate13: number;
+    rate14:number;
+    rate15: number;
+    rate16:number;
+    rate17: number;
+    rate18:number;
+    rate19: number;
+    rate20:number;
+    
+    rate21: number;
+    rate22:number;
+    rate23: number;
+    rate24:number;
+    rate25: number;
+    rate26:number;
+    rate27: number;
+    rate28:number;
+    rate29: number;
+    rate30:number;
+    rate31: number;
+    rate32:number;
+    rate33: number;
+    rate34:number;
+    rate35: number;
+    rate36:number;
+    rate37: number;
+    rate38:number;
+    rate39: number;
+    rate40:number;
+    rate41: number;
+    rate42:number;
+    rate43: number;
+    rate44:number;
+    rate45: number;
+    rate46:number;
+    rate47: number;
+    rate48:number;
+    rate49: number;
+    rate50:number;
+    rate51:number;
+    rate52:number;
+    rate53:number;
+    rate54:number;
+    rate55:number;
+    rate56:number;
+    
+    rate57:number;
+    rate58:number;
+    rate59:number;
+    rate60:number;
+    // Add other rate properties as needed
+  }

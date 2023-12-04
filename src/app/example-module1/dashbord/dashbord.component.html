@@ -1,0 +1,1252 @@
+<app-navbar></app-navbar>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<a routerLink="../addcity" style="
+    background-color: #4285f4 !important;
+    color: #ffffff !important;
+    border: 2px solid #4285f4 !important;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    transition: background-color 0.3s;
+    width: 200px;
+    text-align: center;
+    position: absolute;
+    
+    right: 20px;
+">Add City</a>
+<a routerLink="../addroute" style="
+background-color: #4285f4 !important;
+color: #ffffff !important;
+border: 2px solid #4285f4 !important;
+border-radius: 5px;
+display: inline-block;
+padding: 15px 30px;
+text-decoration: none;
+font-weight: bold;
+font-size: 20px;
+transition: background-color 0.3s;
+width: 200px;
+text-align: center;
+position: absolute;
+
+left:70%;
+">Add Route</a>
+
+
+
+
+<br>
+<br>
+<br>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h1 class="text-center">Tata Ace(7ft)</h1>
+        <form #RateForm="ngForm" (ngSubmit)="addRate(rateform.value)">
+
+          <label class="inp">Rate 1-50</label>
+        <input type="number" id="rate1" class="form-control" name="rate1" ngModel required >
+        <label class="inp">Rate 50-100</label>
+        <input type="number" id="rate2" class="form-control" name="rate2"ngModel required >
+        <label class="inp">Rate 100-150</label>
+        <input type="number" id="rate3" class="form-control"  name="rate3" ngModel required >
+        <label class="inp">Rate 150-200</label>
+         <input type="number" id="rate4" class="form-control" name="rate4" ngModel required >
+        <label class="inp">Rate 200-250</label>
+        <input type="number" id="rate5" class="form-control" name="rate5" ngModel required >
+        <label class="inp">Rate 250-300</label>
+        <input type="number" id="rate6" class="form-control" name="rate6"ngModel required >
+        <label class="inp">Rate 300-350</label>
+        <input type="number" id="rate7" class="form-control" name="rate7" ngModel required >
+        <label class="inp">Rate 350-400</label>
+        <input type="number" id="rate8" class="form-control" name="rate8" ngModel required >
+        <label class="inp">Rate 400-450</label>
+        <input type="number" id="rate9" class="form-control" name="rate9" ngModel required >
+        <label class="inp">Rate 450-500</label>
+        <input type="number" id="rate10" class="form-control"  name="rate10" ngModel required >
+        <label class="inp">Rate 500-550</label>
+        <input type="number" id="rate11" class="form-control" name="rate11" ngModel required >
+        <label class="inp">Rate 550-600</label>
+        <input type="number" id="rate12" class="form-control" name="rate12" ngModel required >
+        <label class="inp">Rate 600-650</label>
+        <input type="number" id="rate13" class="form-control" name="rate13" ngModel required>
+        <label class="inp">Rate 650-700</label>
+        <input type="number" id="rate14" class="form-control" name="rate14" ngModel required>
+        <label class="inp">Rate 700-750</label>
+        <input type="number" id="rate15" class="form-control" name="rate15" ngModel required>
+        <label class="inp">Rate 750-800</label>
+        <input type="number" id="rate16" class="form-control" name="rate16" ngModel required>
+        <label class="inp">Rate 800-850</label>
+        <input type="number" id="rate17" class="form-control"     name="rate17" ngModel required >
+        <label class="inp">Rate 850-900</label>
+        <input type="number" id="rate18" class="form-control" name="rate18" ngModel required>
+        <label class="inp">Rate 900-950</label>
+        <input type="number" id="rate19" class="form-control" name="rate19" ngModel required>
+        <label class="inp">Rate 950-1000</label>
+        <input type="number" id="rate20" class="form-control" name="rate20" ngModel required>
+        <label class="inp">Rate 1000-1050</label>
+        <input type="number" id="rate21" class="form-control" name="rate21" ngModel required>
+        <label class="inp">Rate 1050-1100</label>
+        <input type="number" id="rate22" class="form-control"  name="rate22" ngModel required>
+        <label class="inp">Rate 1100-1150</label>
+        <input type="number" id="rate23" class="form-control" name="rate23" ngModel required>
+        <label class="inp">Rate 1150-1200</label>
+        <input type="number" id="rate24" class="form-control" name="rate24" ngModel required>
+        <label class="inp">Rate 1200-1250</label>
+        <input type="number" id="rate25" class="form-control" name="rate25" ngModel required>
+        <label class="inp">Rate 1250-1300</label>
+        <input type="number" id="rate26" class="form-control" name="rate26" ngModel required>
+        <label class="inp">Rate 1300-1350</label>
+        <input type="number" id="rate27" class="form-control" name="rate27" ngModel required>
+        <label class="inp">Rate 1350-1400</label>
+        <input type="number" id="rate28" class="form-control"   name="rate28" ngModel required>
+        <label class="inp">Rate 1400-1450</label>
+        <input type="number" id="rate29" class="form-control"   name="rate29" ngModel required>
+        <label class="inp">Rate 1450-1500</label>
+        <input type="number" id="rate30" class="form-control"  name="rate30" ngModel required>
+        <label class="inp">Rate 1500-1550</label>
+        <input type="number" id="rate31" class="form-control"  name="rate31" ngModel required>
+        <label class="inp">Rate 1550-1600</label>
+        <input type="number" id="rate31" class="form-control"  name="rate32" ngModel required>
+        <label class="inp">Rate 1600-1650</label>
+        <input type="number" id="rate33" class="form-control"  name="rate33" ngModel required>
+        <label class="inp">Rate 1650-1700</label>
+        <input type="number" id="rate34" class="form-control"  name="rate34"ngModel required>
+        <label class="inp">Rate 1700-1750</label>
+        <input type="number" id="rate35" class="form-control"  name="rate35"ngModel required >
+        <label class="inp">Rate 1750-1800</label>
+        <input type="number" id="rate36" class="form-control"  name="rate36"ngModel required>
+        <label class="inp">Rate 1800-1850</label>
+        <input type="number" id="rate37" class="form-control"  name="rate37"ngModel required>
+        <label class="inp">Rate 1850-1900</label>
+        <input type="number" id="rate38" class="form-control" name="rate38" ngModel required>
+        <label class="inp">Rate 1900-1950</label>
+        <input type="number" id="rate39" class="form-control" name="rate39" ngModel required>
+        <label class="inp">Rate 1950-2000</label>
+        <input type="number" id="rate40" class="form-control"  name="rate40"ngModel required>
+        <label class="inp">Rate 2000-2050</label>
+        <input type="number" id="rate41" class="form-control" name="rate41" ngModel required>
+        <label class="inp">Rate 2050-2100</label>
+        <input type="number" id="rate42" class="form-control" name="rate42" ngModel required>
+        <label class="inp">Rate 2100-2150</label>
+        <input type="number" id="rate43" class="form-control" name="rate43" ngModel required>
+        <label class="inp">Rate 2150-2200</label>
+          <input type="number" id="rate44" class="form-control"  name="rate44"ngModel required >
+        <label class="inp">Rate 2200-2250</label>  
+        <input type="number" id="rate45" class="form-control"  name="rate45"ngModel required>
+        <label class="inp">Rate 2250-2300</label>
+        <input type="number" id="rate46" class="form-control" name="rate46"ngModel required>
+        <label class="inp">Rate 2300-2350</label>
+        <input type="number" id="rate47" class="form-control" name="rate47"ngModel required>
+        <label class="inp">Rate 2350-2400</label>
+        <input type="number" id="rate48" class="form-control" name="rate48" ngModel required>
+        <label class="inp">Rate 2400-2450</label>
+        <input type="number" id="rate49" class="form-control"  name="rate49" ngModel required>
+        <label class="inp">Rate 2450-2500</label>
+        <input type="number" id="rate50" class="form-control" name="rate50" ngModel required>
+        <label class="inp">Rate 2500-2550</label>
+        <input type="number" id="rate51" class="form-control" name="rate51" ngModel required>
+        <label class="inp">Rate 2550-2600</label>
+        <input type="number" id="rate52" class="form-control" name="rate52" ngModel required>
+    
+        <label class="inp">Rate 2600-2650</label>
+        <input type="number" id="rate53" class="form-control" name="rate53" ngModel required>
+        <label class="inp">Rate 2650-2700</label>
+        <input type="number" id="rate54" class="form-control" name="rate54"ngModel required>
+        <label class="inp">Rate 2700-2750</label>
+        <input type="number" id="rate55" class="form-control" name="rate55"ngModel required>
+        <label class="inp">Rate 2750-2800</label>
+        <input type="number" id="rate56" class="form-control" name="rate56" ngModel required>
+        <label class="inp">Rate 2800-2850</label>
+        <input type="number" id="rate57" class="form-control"  name="rate57" ngModel required>
+        <label class="inp">Rate 2850-2900</label>
+        <input type="number" id="rate58" class="form-control" name="rate58" ngModel required>
+        <label class="inp">Rate 2900-2950</label>
+        <input type="number" id="rate59" class="form-control" name="rate59" ngModel required>
+        <label class="inp">Rate 2950-3000</label>
+        <input type="number" id="rate60" class="form-control"  name="rate60" ngModel required> 
+          <button type="submit" class="btn btn-success">{{ editMode ? 'Update Rate' : '' }}</button>
+        </form>
+      </div>
+
+      <div class="col-md-6">
+        <h3>Existing Rates:</h3>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Rate Range</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let rate of data; index as i">
+              <td> {{ rate.rate1 }} <br> {{ rate.rate2 }} <br>{{ rate.rate3 }} <br>{{ rate.rate4 }} <br>{{ rate.rate5 }} <br>
+                 {{ rate.rate6 }} <br>{{ rate.rate7 }} <br>{{ rate.rate8 }} <br> {{ rate.rate9 }} <br> {{ rate.rate10 }}
+                <br>{{ rate.rate11 }} <br> {{ rate.rate12 }} <br> {{ rate.rate13 }} <br>{{ rate.rate14 }} <br>{{ rate.rate15 }} <br>{{ rate.rate16 }} <br>
+                {{ rate.rate17 }} <br>{{ rate.rate18 }} <br>{{ rate.rate19 }} <br> {{ rate.rate20 }} <br> {{ rate.rate21 }} 
+               <br>{{ rate.rate22 }} <br>  {{ rate.rate23 }} <br> {{ rate.rate24 }} <br>{{ rate.rate25 }} <br>{{ rate.rate26 }} <br>{{ rate.rate27 }} <br>
+               {{ rate.rate28 }} <br>{{ rate.rate29 }} <br>{{ rate.rate30 }} <br> {{ rate.rate31 }} <br> {{ rate.rate32 }}
+              <br>{{ rate.rate33 }} <br>  {{ rate.rate34 }} <br> {{ rate.rate35 }} <br>{{ rate.rate36 }} <br>{{ rate.rate37 }} <br>{{ rate.rate38 }} <br>
+              {{ rate.rate39 }} <br>{{ rate.rate40 }} <br>{{ rate.rate41 }} <br> {{ rate.rate42 }} <br> {{ rate.rate43 }}
+             <br>{{ rate.rate44 }} <br>  {{ rate.rate45 }} <br> {{ rate.rate46 }} <br>{{ rate.rate47 }} <br>{{ rate.rate48 }} <br>{{ rate.rate49 }} <br>
+             {{ rate.rate50 }} <br>{{ rate.rate51 }} <br>{{ rate.rate52 }} <br> {{ rate.rate53 }} <br> {{ rate.rate54 }}
+            <br>{{ rate.rate55 }} <br>  {{ rate.rate56 }} <br> {{ rate.rate57 }} <br>{{ rate.rate58 }} <br>{{ rate.rate59 }} <br>{{ rate.rate60 }} <br>
+            </td>
+              <td>
+                <button class="btn btn-primary" (click)="updaterate(rate.id, i)">Update</button>
+               
+                 <!-- <button class="btn btn-danger" (click)="deletrate(rate.id)">Delete</button>  -->
+              </td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  
+  
+
+
+<br>
+<br>
+
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h1 class="text-center">Boloro(8ft)</h1>
+        <form #RateForm1="ngForm" (ngSubmit)="addRate1(rateform1.value)">
+
+          <label class="inp">Rate 1-50</label>
+        <input type="number" id="rate1" class="form-control" name="rate1" ngModel required >
+        <label class="inp">Rate 50-100</label>
+        <input type="number" id="rate2" class="form-control" name="rate2"ngModel required >
+        <label class="inp">Rate 100-150</label>
+        <input type="number" id="rate3" class="form-control"  name="rate3" ngModel required >
+        <label class="inp">Rate 150-200</label>
+         <input type="number" id="rate4" class="form-control" name="rate4" ngModel required >
+        <label class="inp">Rate 200-250</label>
+        <input type="number" id="rate5" class="form-control" name="rate5" ngModel required >
+        <label class="inp">Rate 250-300</label>
+        <input type="number" id="rate6" class="form-control" name="rate6"ngModel required >
+        <label class="inp">Rate 300-350</label>
+        <input type="number" id="rate7" class="form-control" name="rate7" ngModel required >
+        <label class="inp">Rate 350-400</label>
+        <input type="number" id="rate8" class="form-control" name="rate8" ngModel required >
+        <label class="inp">Rate 400-450</label>
+        <input type="number" id="rate8" class="form-control" name="rate9" ngModel required >
+        <label class="inp">Rate 450-500</label>
+        <input type="number" id="rate9" class="form-control"  name="rate10" ngModel required >
+        <label class="inp">Rate 500-550</label>
+        <input type="number" id="rate10" class="form-control" name="rate11" ngModel required >
+        <label class="inp">Rate 550-600</label>
+        <input type="number" id="rate11" class="form-control" name="rate12" ngModel required >
+        <label class="inp">Rate 600-650</label>
+        <input type="number" id="rate12" class="form-control" name="rate13" ngModel required>
+        <label class="inp">Rate 650-700</label>
+        <input type="number" id="rate12" class="form-control" name="rate14" ngModel required>
+        <label class="inp">Rate 700-750</label>
+        <input type="number" id="rate12" class="form-control" name="rate15" ngModel required>
+        <label class="inp">Rate 750-800</label>
+        <input type="number" id="rate12" class="form-control" name="rate16" ngModel required>
+        <label class="inp">Rate 800-850</label>
+        <input type="number" id="rate12" class="form-control"     name="rate17" ngModel required >
+        <label class="inp">Rate 850-900</label>
+        <input type="number" id="rate12" class="form-control" name="rate18" ngModel required>
+        <label class="inp">Rate 900-950</label>
+        <input type="number" id="rate12" class="form-control" name="rate19" ngModel required>
+        <label class="inp">Rate 950-1000</label>
+        <input type="number" id="rate12" class="form-control" name="rate20" ngModel required>
+        <label class="inp">Rate 1000-1050</label>
+        <input type="number" id="rate12" class="form-control" name="rate21" ngModel required>
+        <label class="inp">Rate 1050-1100</label>
+        <input type="number" id="rate12" class="form-control"  name="rate22" ngModel required>
+        <label class="inp">Rate 1100-1150</label>
+        <input type="number" id="rate12" class="form-control" name="rate23" ngModel required>
+        <label class="inp">Rate 1150-1200</label>
+        <input type="number" id="rate12" class="form-control" name="rate24" ngModel required>
+        <label class="inp">Rate 1200-1250</label>
+        <input type="number" id="rate12" class="form-control" name="rate25" ngModel required>
+        <label class="inp">Rate 1250-1300</label>
+        <input type="number" id="rate12" class="form-control" name="rate26" ngModel required>
+        <label class="inp">Rate 1300-1350</label>
+        <input type="number" id="rate12" class="form-control" name="rate27" ngModel required>
+        <label class="inp">Rate 1350-1400</label>
+        <input type="number" id="rate12" class="form-control"   name="rate28" ngModel required>
+        <label class="inp">Rate 1400-1450</label>
+        <input type="number" id="rate12" class="form-control"   name="rate29" ngModel required>
+        <label class="inp">Rate 1450-1500</label>
+        <input type="number" id="rate12" class="form-control"  name="rate30" ngModel required>
+        <label class="inp">Rate 1500-1550</label>
+        <input type="number" id="rate12" class="form-control"  name="rate31" ngModel required>
+        <label class="inp">Rate 1550-1600</label>
+        <input type="number" id="rate12" class="form-control"  name="rate32" ngModel required>
+        <label class="inp">Rate 1600-1650</label>
+        <input type="number" id="rate12" class="form-control"  name="rate33" ngModel required>
+        <label class="inp">Rate 1650-1700</label>
+        <input type="number" id="rate12" class="form-control"  name="rate34"ngModel required>
+        <label class="inp">Rate 1700-1750</label>
+        <input type="number" id="rate12" class="form-control"  name="rate35"ngModel required >
+        <label class="inp">Rate 1750-1800</label>
+        <input type="number" id="rate12" class="form-control"  name="rate36"ngModel required>
+        <label class="inp">Rate 1800-1850</label>
+        <input type="number" id="rate12" class="form-control"  name="rate37"ngModel required>
+        <label class="inp">Rate 1850-1900</label>
+        <input type="number" id="rate12" class="form-control" name="rate38" ngModel required>
+        <label class="inp">Rate 1900-1950</label>
+        <input type="number" id="rate12" class="form-control" name="rate39" ngModel required>
+        <label class="inp">Rate 1950-2000</label>
+        <input type="number" id="rate12" class="form-control"  name="rate40"ngModel required>
+        <label class="inp">Rate 2000-2050</label>
+        <input type="number" id="rate12" class="form-control" name="rate41" ngModel required>
+        <label class="inp">Rate 2050-2100</label>
+        <input type="number" id="rate12" class="form-control" name="rate42" ngModel required>
+        <label class="inp">Rate 2100-2150</label>
+        <input type="number" id="rate12" class="form-control" name="rate43" ngModel required>
+        <label class="inp">Rate 2150-2200</label>
+          <input type="number" id="rate12" class="form-control"  name="rate44"ngModel required >
+        <label class="inp">Rate 2200-2250</label>  
+        <input type="number" id="rate12" class="form-control"  name="rate45"ngModel required>
+        <label class="inp">Rate 2250-2300</label>
+        <input type="number" id="rate12" class="form-control" name="rate46"ngModel required>
+        <label class="inp">Rate 2300-2350</label>
+        <input type="number" id="rate12" class="form-control" name="rate47"ngModel required>
+        <label class="inp">Rate 2350-2400</label>
+        <input type="number" id="rate12" class="form-control" name="rate48" ngModel required>
+        <label class="inp">Rate 2400-2450</label>
+        <input type="number" id="rate12" class="form-control"  name="rate49" ngModel required>
+        <label class="inp">Rate 2450-2500</label>
+        <input type="number" id="rate12" class="form-control" name="rate50" ngModel required>
+        <label class="inp">Rate 2500-2550</label>
+        <input type="number" id="rate12" class="form-control" name="rate51" ngModel required>
+        <label class="inp">Rate 2550-2600</label>
+        <input type="number" id="rate12" class="form-control" name="rate52" ngModel required>
+    
+        <label class="inp">Rate 2600-2650</label>
+        <input type="number" id="rate12" class="form-control" name="rate53" ngModel required>
+        <label class="inp">Rate 2650-2700</label>
+        <input type="number" id="rate12" class="form-control" name="rate54"ngModel required>
+        <label class="inp">Rate 2700-2750</label>
+        <input type="number" id="rate12" class="form-control" name="rate55"ngModel required>
+        <label class="inp">Rate 2750-2800</label>
+        <input type="number" id="rate12" class="form-control" name="rate56" ngModel required>
+        <label class="inp">Rate 2800-2850</label>
+        <input type="number" id="rate12" class="form-control"  name="rate57" ngModel required>
+        <label class="inp">Rate 2850-2900</label>
+        <input type="number" id="rate12" class="form-control" name="rate58" ngModel required>
+        <label class="inp">Rate 2900-2950</label>
+        <input type="number" id="rate12" class="form-control" name="rate59" ngModel required>
+        <label class="inp">Rate 2950-3000</label>
+        <input type="number" id="rate12" class="form-control"  name="rate60" ngModel required> 
+          <button type="submit" class="btn btn-success">{{ editMode1 ? 'Update Rate' : '' }}</button>
+        </form>
+      </div>
+
+      <div class="col-md-6">
+        <h3>Existing Rates:</h3>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Rate Range</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let rate of data1; index as i">
+              <td> {{ rate.rate1 }} <br> {{ rate.rate2 }} <br>{{ rate.rate3 }} <br>{{ rate.rate4 }} <br>{{ rate.rate5 }} <br>
+                 {{ rate.rate6 }} <br>{{ rate.rate7 }} <br>{{ rate.rate8 }} <br> {{ rate.rate9 }} <br> {{ rate.rate10 }}
+                <br>{{ rate.rate11 }} <br> {{ rate.rate12 }} <br> {{ rate.rate13 }} <br>{{ rate.rate14 }} <br>{{ rate.rate15 }} <br>{{ rate.rate16 }} <br>
+                {{ rate.rate17 }} <br>{{ rate.rate18 }} <br>{{ rate.rate19 }} <br> {{ rate.rate20 }} <br> {{ rate.rate21 }} 
+               <br>{{ rate.rate22 }} <br>  {{ rate.rate23 }} <br> {{ rate.rate24 }} <br>{{ rate.rate25 }} <br>{{ rate.rate26 }} <br>{{ rate.rate27 }} <br>
+               {{ rate.rate28 }} <br>{{ rate.rate29 }} <br>{{ rate.rate30 }} <br> {{ rate.rate31 }} <br> {{ rate.rate32 }}
+              <br>{{ rate.rate33 }} <br>  {{ rate.rate34 }} <br> {{ rate.rate35 }} <br>{{ rate.rate36 }} <br>{{ rate.rate37 }} <br>{{ rate.rate38 }} <br>
+              {{ rate.rate39 }} <br>{{ rate.rate40 }} <br>{{ rate.rate41 }} <br> {{ rate.rate42 }} <br> {{ rate.rate43 }}
+             <br>{{ rate.rate44 }} <br>  {{ rate.rate45 }} <br> {{ rate.rate46 }} <br>{{ rate.rate47 }} <br>{{ rate.rate48 }} <br>{{ rate.rate49 }} <br>
+             {{ rate.rate50 }} <br>{{ rate.rate51 }} <br>{{ rate.rate52 }} <br> {{ rate.rate53 }} <br> {{ rate.rate54 }}
+            <br>{{ rate.rate55 }} <br>  {{ rate.rate56 }} <br> {{ rate.rate57 }} <br>{{ rate.rate58 }} <br>{{ rate.rate59 }} <br>{{ rate.rate60 }} <br>
+            </td>
+              <td>
+                <button class="btn btn-primary" (click)="updaterate1(rate.id, i)">Update</button>
+               
+                <!-- <button class="btn btn-danger" (click)="deletrate(rate.id)">Delete</button> -->
+              </td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  
+<br>
+<br>
+
+
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h1 class="text-center">Canter(14ft)</h1>
+        <form #RateForm2="ngForm" (ngSubmit)="addRate2(rateform2.value)">
+
+          <label class="inp">Rate 1-50</label>
+        <input type="number" id="rate1" class="form-control" name="rate1" ngModel required >
+        <label class="inp">Rate 50-100</label>
+        <input type="number" id="rate2" class="form-control" name="rate2"ngModel required >
+        <label class="inp">Rate 100-150</label>
+        <input type="number" id="rate3" class="form-control"  name="rate3" ngModel required >
+        <label class="inp">Rate 150-200</label>
+         <input type="number" id="rate4" class="form-control" name="rate4" ngModel required >
+        <label class="inp">Rate 200-250</label>
+        <input type="number" id="rate5" class="form-control" name="rate5" ngModel required >
+        <label class="inp">Rate 250-300</label>
+        <input type="number" id="rate6" class="form-control" name="rate6"ngModel required >
+        <label class="inp">Rate 300-350</label>
+        <input type="number" id="rate7" class="form-control" name="rate7" ngModel required >
+        <label class="inp">Rate 350-400</label>
+        <input type="number" id="rate8" class="form-control" name="rate8" ngModel required >
+        <label class="inp">Rate 400-450</label>
+        <input type="number" id="rate8" class="form-control" name="rate9" ngModel required >
+        <label class="inp">Rate 450-500</label>
+        <input type="number" id="rate9" class="form-control"  name="rate10" ngModel required >
+        <label class="inp">Rate 500-550</label>
+        <input type="number" id="rate10" class="form-control" name="rate11" ngModel required >
+        <label class="inp">Rate 550-600</label>
+        <input type="number" id="rate11" class="form-control" name="rate12" ngModel required >
+        <label class="inp">Rate 600-650</label>
+        <input type="number" id="rate12" class="form-control" name="rate13" ngModel required>
+        <label class="inp">Rate 650-700</label>
+        <input type="number" id="rate12" class="form-control" name="rate14" ngModel required>
+        <label class="inp">Rate 700-750</label>
+        <input type="number" id="rate12" class="form-control" name="rate15" ngModel required>
+        <label class="inp">Rate 750-800</label>
+        <input type="number" id="rate12" class="form-control" name="rate16" ngModel required>
+        <label class="inp">Rate 800-850</label>
+        <input type="number" id="rate12" class="form-control"     name="rate17" ngModel required >
+        <label class="inp">Rate 850-900</label>
+        <input type="number" id="rate12" class="form-control" name="rate18" ngModel required>
+        <label class="inp">Rate 900-950</label>
+        <input type="number" id="rate12" class="form-control" name="rate19" ngModel required>
+        <label class="inp">Rate 950-1000</label>
+        <input type="number" id="rate12" class="form-control" name="rate20" ngModel required>
+        <label class="inp">Rate 1000-1050</label>
+        <input type="number" id="rate12" class="form-control" name="rate21" ngModel required>
+        <label class="inp">Rate 1050-1100</label>
+        <input type="number" id="rate12" class="form-control"  name="rate22" ngModel required>
+        <label class="inp">Rate 1100-1150</label>
+        <input type="number" id="rate12" class="form-control" name="rate23" ngModel required>
+        <label class="inp">Rate 1150-1200</label>
+        <input type="number" id="rate12" class="form-control" name="rate24" ngModel required>
+        <label class="inp">Rate 1200-1250</label>
+        <input type="number" id="rate12" class="form-control" name="rate25" ngModel required>
+        <label class="inp">Rate 1250-1300</label>
+        <input type="number" id="rate12" class="form-control" name="rate26" ngModel required>
+        <label class="inp">Rate 1300-1350</label>
+        <input type="number" id="rate12" class="form-control" name="rate27" ngModel required>
+        <label class="inp">Rate 1350-1400</label>
+        <input type="number" id="rate12" class="form-control"   name="rate28" ngModel required>
+        <label class="inp">Rate 1400-1450</label>
+        <input type="number" id="rate12" class="form-control"   name="rate29" ngModel required>
+        <label class="inp">Rate 1450-1500</label>
+        <input type="number" id="rate12" class="form-control"  name="rate30" ngModel required>
+        <label class="inp">Rate 1500-1550</label>
+        <input type="number" id="rate12" class="form-control"  name="rate31" ngModel required>
+        <label class="inp">Rate 1550-1600</label>
+        <input type="number" id="rate12" class="form-control"  name="rate32" ngModel required>
+        <label class="inp">Rate 1600-1650</label>
+        <input type="number" id="rate12" class="form-control"  name="rate33" ngModel required>
+        <label class="inp">Rate 1650-1700</label>
+        <input type="number" id="rate12" class="form-control"  name="rate34"ngModel required>
+        <label class="inp">Rate 1700-1750</label>
+        <input type="number" id="rate12" class="form-control"  name="rate35"ngModel required >
+        <label class="inp">Rate 1750-1800</label>
+        <input type="number" id="rate12" class="form-control"  name="rate36"ngModel required>
+        <label class="inp">Rate 1800-1850</label>
+        <input type="number" id="rate12" class="form-control"  name="rate37"ngModel required>
+        <label class="inp">Rate 1850-1900</label>
+        <input type="number" id="rate12" class="form-control" name="rate38" ngModel required>
+        <label class="inp">Rate 1900-1950</label>
+        <input type="number" id="rate12" class="form-control" name="rate39" ngModel required>
+        <label class="inp">Rate 1950-2000</label>
+        <input type="number" id="rate12" class="form-control"  name="rate40"ngModel required>
+        <label class="inp">Rate 2000-2050</label>
+        <input type="number" id="rate12" class="form-control" name="rate41" ngModel required>
+        <label class="inp">Rate 2050-2100</label>
+        <input type="number" id="rate12" class="form-control" name="rate42" ngModel required>
+        <label class="inp">Rate 2100-2150</label>
+        <input type="number" id="rate12" class="form-control" name="rate43" ngModel required>
+        <label class="inp">Rate 2150-2200</label>
+          <input type="number" id="rate12" class="form-control"  name="rate44"ngModel required >
+        <label class="inp">Rate 2200-2250</label>  
+        <input type="number" id="rate12" class="form-control"  name="rate45"ngModel required>
+        <label class="inp">Rate 2250-2300</label>
+        <input type="number" id="rate12" class="form-control" name="rate46"ngModel required>
+        <label class="inp">Rate 2300-2350</label>
+        <input type="number" id="rate12" class="form-control" name="rate47"ngModel required>
+        <label class="inp">Rate 2350-2400</label>
+        <input type="number" id="rate12" class="form-control" name="rate48" ngModel required>
+        <label class="inp">Rate 2400-2450</label>
+        <input type="number" id="rate12" class="form-control"  name="rate49" ngModel required>
+        <label class="inp">Rate 2450-2500</label>
+        <input type="number" id="rate12" class="form-control" name="rate50" ngModel required>
+        <label class="inp">Rate 2500-2550</label>
+        <input type="number" id="rate12" class="form-control" name="rate51" ngModel required>
+        <label class="inp">Rate 2550-2600</label>
+        <input type="number" id="rate12" class="form-control" name="rate52" ngModel required>
+    
+        <label class="inp">Rate 2600-2650</label>
+        <input type="number" id="rate12" class="form-control" name="rate53" ngModel required>
+        <label class="inp">Rate 2650-2700</label>
+        <input type="number" id="rate12" class="form-control" name="rate54"ngModel required>
+        <label class="inp">Rate 2700-2750</label>
+        <input type="number" id="rate12" class="form-control" name="rate55"ngModel required>
+        <label class="inp">Rate 2750-2800</label>
+        <input type="number" id="rate12" class="form-control" name="rate56" ngModel required>
+        <label class="inp">Rate 2800-2850</label>
+        <input type="number" id="rate12" class="form-control"  name="rate57" ngModel required>
+        <label class="inp">Rate 2850-2900</label>
+        <input type="number" id="rate12" class="form-control" name="rate58" ngModel required>
+        <label class="inp">Rate 2900-2950</label>
+        <input type="number" id="rate12" class="form-control" name="rate59" ngModel required>
+        <label class="inp">Rate 2950-3000</label>
+        <input type="number" id="rate12" class="form-control"  name="rate60" ngModel required> 
+          <button type="submit" class="btn btn-success">{{ editMode2 ? 'Update Rate' : '' }}</button>
+        </form>
+      </div>
+
+      <div class="col-md-6">
+        <h3>Existing Rates:</h3>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Rate Range</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let rate of data2; index as i">
+              <td> {{ rate.rate1 }} <br> {{ rate.rate2 }} <br>{{ rate.rate3 }} <br>{{ rate.rate4 }} <br>{{ rate.rate5 }} <br>
+                 {{ rate.rate6 }} <br>{{ rate.rate7 }} <br>{{ rate.rate8 }} <br> {{ rate.rate9 }} <br> {{ rate.rate10 }}
+                <br>{{ rate.rate11 }} <br> {{ rate.rate12 }} <br> {{ rate.rate13 }} <br>{{ rate.rate14 }} <br>{{ rate.rate15 }} <br>{{ rate.rate16 }} <br>
+                {{ rate.rate17 }} <br>{{ rate.rate18 }} <br>{{ rate.rate19 }} <br> {{ rate.rate20 }} <br> {{ rate.rate21 }} 
+               <br>{{ rate.rate22 }} <br>  {{ rate.rate23 }} <br> {{ rate.rate24 }} <br>{{ rate.rate25 }} <br>{{ rate.rate26 }} <br>{{ rate.rate27 }} <br>
+               {{ rate.rate28 }} <br>{{ rate.rate29 }} <br>{{ rate.rate30 }} <br> {{ rate.rate31 }} <br> {{ rate.rate32 }}
+              <br>{{ rate.rate33 }} <br>  {{ rate.rate34 }} <br> {{ rate.rate35 }} <br>{{ rate.rate36 }} <br>{{ rate.rate37 }} <br>{{ rate.rate38 }} <br>
+              {{ rate.rate39 }} <br>{{ rate.rate40 }} <br>{{ rate.rate41 }} <br> {{ rate.rate42 }} <br> {{ rate.rate43 }}
+             <br>{{ rate.rate44 }} <br>  {{ rate.rate45 }} <br> {{ rate.rate46 }} <br>{{ rate.rate47 }} <br>{{ rate.rate48 }} <br>{{ rate.rate49 }} <br>
+             {{ rate.rate50 }} <br>{{ rate.rate51 }} <br>{{ rate.rate52 }} <br> {{ rate.rate53 }} <br> {{ rate.rate54 }}
+            <br>{{ rate.rate55 }} <br>  {{ rate.rate56 }} <br> {{ rate.rate57 }} <br>{{ rate.rate58 }} <br>{{ rate.rate59 }} <br>{{ rate.rate60 }} <br>
+            </td>
+              <td>
+                <button class="btn btn-primary" (click)="updaterate2(rate.id, i)">Update</button>
+               
+                <!-- <button class="btn btn-danger" (click)="deletrate2(rate.id)">Delete</button> -->
+              </td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  
+
+<br>
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <h1 class="text-center">HCanter(17ft)</h1>
+      <form #RateForm3="ngForm" (ngSubmit)="addRate3(rateform3.value)">
+
+        <label class="inp">Rate 1-50</label>
+      <input type="number" id="rate1" class="form-control" name="rate1" ngModel required >
+      <label class="inp">Rate 50-100</label>
+      <input type="number" id="rate2" class="form-control" name="rate2"ngModel required >
+      <label class="inp">Rate 100-150</label>
+      <input type="number" id="rate3" class="form-control"  name="rate3" ngModel required >
+      <label class="inp">Rate 150-200</label>
+       <input type="number" id="rate4" class="form-control" name="rate4" ngModel required >
+      <label class="inp">Rate 200-250</label>
+      <input type="number" id="rate5" class="form-control" name="rate5" ngModel required >
+      <label class="inp">Rate 250-300</label>
+      <input type="number" id="rate6" class="form-control" name="rate6"ngModel required >
+      <label class="inp">Rate 300-350</label>
+      <input type="number" id="rate7" class="form-control" name="rate7" ngModel required >
+      <label class="inp">Rate 350-400</label>
+      <input type="number" id="rate8" class="form-control" name="rate8" ngModel required >
+      <label class="inp">Rate 400-450</label>
+      <input type="number" id="rate8" class="form-control" name="rate9" ngModel required >
+      <label class="inp">Rate 450-500</label>
+      <input type="number" id="rate9" class="form-control"  name="rate10" ngModel required >
+      <label class="inp">Rate 500-550</label>
+      <input type="number" id="rate10" class="form-control" name="rate11" ngModel required >
+      <label class="inp">Rate 550-600</label>
+      <input type="number" id="rate11" class="form-control" name="rate12" ngModel required >
+      <label class="inp">Rate 600-650</label>
+      <input type="number" id="rate12" class="form-control" name="rate13" ngModel required>
+      <label class="inp">Rate 650-700</label>
+      <input type="number" id="rate12" class="form-control" name="rate14" ngModel required>
+      <label class="inp">Rate 700-750</label>
+      <input type="number" id="rate12" class="form-control" name="rate15" ngModel required>
+      <label class="inp">Rate 750-800</label>
+      <input type="number" id="rate12" class="form-control" name="rate16" ngModel required>
+      <label class="inp">Rate 800-850</label>
+      <input type="number" id="rate12" class="form-control"     name="rate17" ngModel required >
+      <label class="inp">Rate 850-900</label>
+      <input type="number" id="rate12" class="form-control" name="rate18" ngModel required>
+      <label class="inp">Rate 900-950</label>
+      <input type="number" id="rate12" class="form-control" name="rate19" ngModel required>
+      <label class="inp">Rate 950-1000</label>
+      <input type="number" id="rate12" class="form-control" name="rate20" ngModel required>
+      <label class="inp">Rate 1000-1050</label>
+      <input type="number" id="rate12" class="form-control" name="rate21" ngModel required>
+      <label class="inp">Rate 1050-1100</label>
+      <input type="number" id="rate12" class="form-control"  name="rate22" ngModel required>
+      <label class="inp">Rate 1100-1150</label>
+      <input type="number" id="rate12" class="form-control" name="rate23" ngModel required>
+      <label class="inp">Rate 1150-1200</label>
+      <input type="number" id="rate12" class="form-control" name="rate24" ngModel required>
+      <label class="inp">Rate 1200-1250</label>
+      <input type="number" id="rate12" class="form-control" name="rate25" ngModel required>
+      <label class="inp">Rate 1250-1300</label>
+      <input type="number" id="rate12" class="form-control" name="rate26" ngModel required>
+      <label class="inp">Rate 1300-1350</label>
+      <input type="number" id="rate12" class="form-control" name="rate27" ngModel required>
+      <label class="inp">Rate 1350-1400</label>
+      <input type="number" id="rate12" class="form-control"   name="rate28" ngModel required>
+      <label class="inp">Rate 1400-1450</label>
+      <input type="number" id="rate12" class="form-control"   name="rate29" ngModel required>
+      <label class="inp">Rate 1450-1500</label>
+      <input type="number" id="rate12" class="form-control"  name="rate30" ngModel required>
+      <label class="inp">Rate 1500-1550</label>
+      <input type="number" id="rate12" class="form-control"  name="rate31" ngModel required>
+      <label class="inp">Rate 1550-1600</label>
+      <input type="number" id="rate12" class="form-control"  name="rate32" ngModel required>
+      <label class="inp">Rate 1600-1650</label>
+      <input type="number" id="rate12" class="form-control"  name="rate33" ngModel required>
+      <label class="inp">Rate 1650-1700</label>
+      <input type="number" id="rate12" class="form-control"  name="rate34"ngModel required>
+      <label class="inp">Rate 1700-1750</label>
+      <input type="number" id="rate12" class="form-control"  name="rate35"ngModel required >
+      <label class="inp">Rate 1750-1800</label>
+      <input type="number" id="rate12" class="form-control"  name="rate36"ngModel required>
+      <label class="inp">Rate 1800-1850</label>
+      <input type="number" id="rate12" class="form-control"  name="rate37"ngModel required>
+      <label class="inp">Rate 1850-1900</label>
+      <input type="number" id="rate12" class="form-control" name="rate38" ngModel required>
+      <label class="inp">Rate 1900-1950</label>
+      <input type="number" id="rate12" class="form-control" name="rate39" ngModel required>
+      <label class="inp">Rate 1950-2000</label>
+      <input type="number" id="rate12" class="form-control"  name="rate40"ngModel required>
+      <label class="inp">Rate 2000-2050</label>
+      <input type="number" id="rate12" class="form-control" name="rate41" ngModel required>
+      <label class="inp">Rate 2050-2100</label>
+      <input type="number" id="rate12" class="form-control" name="rate42" ngModel required>
+      <label class="inp">Rate 2100-2150</label>
+      <input type="number" id="rate12" class="form-control" name="rate43" ngModel required>
+      <label class="inp">Rate 2150-2200</label>
+        <input type="number" id="rate12" class="form-control"  name="rate44"ngModel required >
+      <label class="inp">Rate 2200-2250</label>  
+      <input type="number" id="rate12" class="form-control"  name="rate45"ngModel required>
+      <label class="inp">Rate 2250-2300</label>
+      <input type="number" id="rate12" class="form-control" name="rate46"ngModel required>
+      <label class="inp">Rate 2300-2350</label>
+      <input type="number" id="rate12" class="form-control" name="rate47"ngModel required>
+      <label class="inp">Rate 2350-2400</label>
+      <input type="number" id="rate12" class="form-control" name="rate48" ngModel required>
+      <label class="inp">Rate 2400-2450</label>
+      <input type="number" id="rate12" class="form-control"  name="rate49" ngModel required>
+      <label class="inp">Rate 2450-2500</label>
+      <input type="number" id="rate12" class="form-control" name="rate50" ngModel required>
+      <label class="inp">Rate 2500-2550</label>
+      <input type="number" id="rate12" class="form-control" name="rate51" ngModel required>
+      <label class="inp">Rate 2550-2600</label>
+      <input type="number" id="rate12" class="form-control" name="rate52" ngModel required>
+  
+      <label class="inp">Rate 2600-2650</label>
+      <input type="number" id="rate12" class="form-control" name="rate53" ngModel required>
+      <label class="inp">Rate 2650-2700</label>
+      <input type="number" id="rate12" class="form-control" name="rate54"ngModel required>
+      <label class="inp">Rate 2700-2750</label>
+      <input type="number" id="rate12" class="form-control" name="rate55"ngModel required>
+      <label class="inp">Rate 2750-2800</label>
+      <input type="number" id="rate12" class="form-control" name="rate56" ngModel required>
+      <label class="inp">Rate 2800-2850</label>
+      <input type="number" id="rate12" class="form-control"  name="rate57" ngModel required>
+      <label class="inp">Rate 2850-2900</label>
+      <input type="number" id="rate12" class="form-control" name="rate58" ngModel required>
+      <label class="inp">Rate 2900-2950</label>
+      <input type="number" id="rate12" class="form-control" name="rate59" ngModel required>
+      <label class="inp">Rate 2950-3000</label>
+      <input type="number" id="rate12" class="form-control"  name="rate60" ngModel required> 
+        <button type="submit" class="btn btn-success">{{ editMode3 ? 'Update Rate' : '' }}</button>
+      </form>
+    </div>
+
+    <div class="col-md-6">
+      <h3>Existing Rates:</h3>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Rate Range</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let rate of data3; index as i">
+            <td> {{ rate.rate1 }} <br> {{ rate.rate2 }} <br>{{ rate.rate3 }} <br>{{ rate.rate4 }} <br>{{ rate.rate5 }} <br>
+               {{ rate.rate6 }} <br>{{ rate.rate7 }} <br>{{ rate.rate8 }} <br> {{ rate.rate9 }} <br> {{ rate.rate10 }}
+              <br>{{ rate.rate11 }} <br> {{ rate.rate12 }} <br> {{ rate.rate13 }} <br>{{ rate.rate14 }} <br>{{ rate.rate15 }} <br>{{ rate.rate16 }} <br>
+              {{ rate.rate17 }} <br>{{ rate.rate18 }} <br>{{ rate.rate19 }} <br> {{ rate.rate20 }} <br> {{ rate.rate21 }} 
+             <br>{{ rate.rate22 }} <br>  {{ rate.rate23 }} <br> {{ rate.rate24 }} <br>{{ rate.rate25 }} <br>{{ rate.rate26 }} <br>{{ rate.rate27 }} <br>
+             {{ rate.rate28 }} <br>{{ rate.rate29 }} <br>{{ rate.rate30 }} <br> {{ rate.rate31 }} <br> {{ rate.rate32 }}
+            <br>{{ rate.rate33 }} <br>  {{ rate.rate34 }} <br> {{ rate.rate35 }} <br>{{ rate.rate36 }} <br>{{ rate.rate37 }} <br>{{ rate.rate38 }} <br>
+            {{ rate.rate39 }} <br>{{ rate.rate40 }} <br>{{ rate.rate41 }} <br> {{ rate.rate42 }} <br> {{ rate.rate43 }}
+           <br>{{ rate.rate44 }} <br>  {{ rate.rate45 }} <br> {{ rate.rate46 }} <br>{{ rate.rate47 }} <br>{{ rate.rate48 }} <br>{{ rate.rate49 }} <br>
+           {{ rate.rate50 }} <br>{{ rate.rate51 }} <br>{{ rate.rate52 }} <br> {{ rate.rate53 }} <br> {{ rate.rate54 }}
+          <br>{{ rate.rate55 }} <br>  {{ rate.rate56 }} <br> {{ rate.rate57 }} <br>{{ rate.rate58 }} <br>{{ rate.rate59 }} <br>{{ rate.rate60 }} <br>
+          </td>
+            <td>
+              <button class="btn btn-primary" (click)="updaterate3(rate.id, i)">Update</button>
+             
+              <!-- <button class="btn btn-danger" (click)="deletrate3(rate.id)">Delete</button> -->
+            </td>
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+
+<br>
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <h1 class="text-center">H(20ft)</h1>
+      <form #RateForm4="ngForm" (ngSubmit)="addRate4(rateform4.value)">
+
+        <label class="inp">Rate 1-50</label>
+      <input type="number" id="rate1" class="form-control" name="rate1" ngModel required >
+      <label class="inp">Rate 50-100</label>
+      <input type="number" id="rate2" class="form-control" name="rate2"ngModel required >
+      <label class="inp">Rate 100-150</label>
+      <input type="number" id="rate3" class="form-control"  name="rate3" ngModel required >
+      <label class="inp">Rate 150-200</label>
+       <input type="number" id="rate4" class="form-control" name="rate4" ngModel required >
+      <label class="inp">Rate 200-250</label>
+      <input type="number" id="rate5" class="form-control" name="rate5" ngModel required >
+      <label class="inp">Rate 250-300</label>
+      <input type="number" id="rate6" class="form-control" name="rate6"ngModel required >
+      <label class="inp">Rate 300-350</label>
+      <input type="number" id="rate7" class="form-control" name="rate7" ngModel required >
+      <label class="inp">Rate 350-400</label>
+      <input type="number" id="rate8" class="form-control" name="rate8" ngModel required >
+      <label class="inp">Rate 400-450</label>
+      <input type="number" id="rate8" class="form-control" name="rate9" ngModel required >
+      <label class="inp">Rate 450-500</label>
+      <input type="number" id="rate9" class="form-control"  name="rate10" ngModel required >
+      <label class="inp">Rate 500-550</label>
+      <input type="number" id="rate10" class="form-control" name="rate11" ngModel required >
+      <label class="inp">Rate 550-600</label>
+      <input type="number" id="rate11" class="form-control" name="rate12" ngModel required >
+      <label class="inp">Rate 600-650</label>
+      <input type="number" id="rate12" class="form-control" name="rate13" ngModel required>
+      <label class="inp">Rate 650-700</label>
+      <input type="number" id="rate12" class="form-control" name="rate14" ngModel required>
+      <label class="inp">Rate 700-750</label>
+      <input type="number" id="rate12" class="form-control" name="rate15" ngModel required>
+      <label class="inp">Rate 750-800</label>
+      <input type="number" id="rate12" class="form-control" name="rate16" ngModel required>
+      <label class="inp">Rate 800-850</label>
+      <input type="number" id="rate12" class="form-control"     name="rate17" ngModel required >
+      <label class="inp">Rate 850-900</label>
+      <input type="number" id="rate12" class="form-control" name="rate18" ngModel required>
+      <label class="inp">Rate 900-950</label>
+      <input type="number" id="rate12" class="form-control" name="rate19" ngModel required>
+      <label class="inp">Rate 950-1000</label>
+      <input type="number" id="rate12" class="form-control" name="rate20" ngModel required>
+      <label class="inp">Rate 1000-1050</label>
+      <input type="number" id="rate12" class="form-control" name="rate21" ngModel required>
+      <label class="inp">Rate 1050-1100</label>
+      <input type="number" id="rate12" class="form-control"  name="rate22" ngModel required>
+      <label class="inp">Rate 1100-1150</label>
+      <input type="number" id="rate12" class="form-control" name="rate23" ngModel required>
+      <label class="inp">Rate 1150-1200</label>
+      <input type="number" id="rate12" class="form-control" name="rate24" ngModel required>
+      <label class="inp">Rate 1200-1250</label>
+      <input type="number" id="rate12" class="form-control" name="rate25" ngModel required>
+      <label class="inp">Rate 1250-1300</label>
+      <input type="number" id="rate12" class="form-control" name="rate26" ngModel required>
+      <label class="inp">Rate 1300-1350</label>
+      <input type="number" id="rate12" class="form-control" name="rate27" ngModel required>
+      <label class="inp">Rate 1350-1400</label>
+      <input type="number" id="rate12" class="form-control"   name="rate28" ngModel required>
+      <label class="inp">Rate 1400-1450</label>
+      <input type="number" id="rate12" class="form-control"   name="rate29" ngModel required>
+      <label class="inp">Rate 1450-1500</label>
+      <input type="number" id="rate12" class="form-control"  name="rate30" ngModel required>
+      <label class="inp">Rate 1500-1550</label>
+      <input type="number" id="rate12" class="form-control"  name="rate31" ngModel required>
+      <label class="inp">Rate 1550-1600</label>
+      <input type="number" id="rate12" class="form-control"  name="rate32" ngModel required>
+      <label class="inp">Rate 1600-1650</label>
+      <input type="number" id="rate12" class="form-control"  name="rate33" ngModel required>
+      <label class="inp">Rate 1650-1700</label>
+      <input type="number" id="rate12" class="form-control"  name="rate34"ngModel required>
+      <label class="inp">Rate 1700-1750</label>
+      <input type="number" id="rate12" class="form-control"  name="rate35"ngModel required >
+      <label class="inp">Rate 1750-1800</label>
+      <input type="number" id="rate12" class="form-control"  name="rate36"ngModel required>
+      <label class="inp">Rate 1800-1850</label>
+      <input type="number" id="rate12" class="form-control"  name="rate37"ngModel required>
+      <label class="inp">Rate 1850-1900</label>
+      <input type="number" id="rate12" class="form-control" name="rate38" ngModel required>
+      <label class="inp">Rate 1900-1950</label>
+      <input type="number" id="rate12" class="form-control" name="rate39" ngModel required>
+      <label class="inp">Rate 1950-2000</label>
+      <input type="number" id="rate12" class="form-control"  name="rate40"ngModel required>
+      <label class="inp">Rate 2000-2050</label>
+      <input type="number" id="rate12" class="form-control" name="rate41" ngModel required>
+      <label class="inp">Rate 2050-2100</label>
+      <input type="number" id="rate12" class="form-control" name="rate42" ngModel required>
+      <label class="inp">Rate 2100-2150</label>
+      <input type="number" id="rate12" class="form-control" name="rate43" ngModel required>
+      <label class="inp">Rate 2150-2200</label>
+        <input type="number" id="rate12" class="form-control"  name="rate44"ngModel required >
+      <label class="inp">Rate 2200-2250</label>  
+      <input type="number" id="rate12" class="form-control"  name="rate45"ngModel required>
+      <label class="inp">Rate 2250-2300</label>
+      <input type="number" id="rate12" class="form-control" name="rate46"ngModel required>
+      <label class="inp">Rate 2300-2350</label>
+      <input type="number" id="rate12" class="form-control" name="rate47"ngModel required>
+      <label class="inp">Rate 2350-2400</label>
+      <input type="number" id="rate12" class="form-control" name="rate48" ngModel required>
+      <label class="inp">Rate 2400-2450</label>
+      <input type="number" id="rate12" class="form-control"  name="rate49" ngModel required>
+      <label class="inp">Rate 2450-2500</label>
+      <input type="number" id="rate12" class="form-control" name="rate50" ngModel required>
+      <label class="inp">Rate 2500-2550</label>
+      <input type="number" id="rate12" class="form-control" name="rate51" ngModel required>
+      <label class="inp">Rate 2550-2600</label>
+      <input type="number" id="rate12" class="form-control" name="rate52" ngModel required>
+  
+      <label class="inp">Rate 2600-2650</label>
+      <input type="number" id="rate12" class="form-control" name="rate53" ngModel required>
+      <label class="inp">Rate 2650-2700</label>
+      <input type="number" id="rate12" class="form-control" name="rate54"ngModel required>
+      <label class="inp">Rate 2700-2750</label>
+      <input type="number" id="rate12" class="form-control" name="rate55"ngModel required>
+      <label class="inp">Rate 2750-2800</label>
+      <input type="number" id="rate12" class="form-control" name="rate56" ngModel required>
+      <label class="inp">Rate 2800-2850</label>
+      <input type="number" id="rate12" class="form-control"  name="rate57" ngModel required>
+      <label class="inp">Rate 2850-2900</label>
+      <input type="number" id="rate12" class="form-control" name="rate58" ngModel required>
+      <label class="inp">Rate 2900-2950</label>
+      <input type="number" id="rate12" class="form-control" name="rate59" ngModel required>
+      <label class="inp">Rate 2950-3000</label>
+      <input type="number" id="rate12" class="form-control"  name="rate60" ngModel required> 
+        <button type="submit" class="btn btn-success">{{ editMode4 ? 'Update Rate' : '' }}</button>
+      </form>
+    </div>
+
+    <div class="col-md-6">
+      <h3>Existing Rates:</h3>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Rate Range</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let rate of data4; index as i">
+            <td> {{ rate.rate1 }} <br> {{ rate.rate2 }} <br>{{ rate.rate3 }} <br>{{ rate.rate4 }} <br>{{ rate.rate5 }} <br>
+               {{ rate.rate6 }} <br>{{ rate.rate7 }} <br>{{ rate.rate8 }} <br> {{ rate.rate9 }} <br> {{ rate.rate10 }}
+              <br>{{ rate.rate11 }} <br> {{ rate.rate12 }} <br> {{ rate.rate13 }} <br>{{ rate.rate14 }} <br>{{ rate.rate15 }} <br>{{ rate.rate16 }} <br>
+              {{ rate.rate17 }} <br>{{ rate.rate18 }} <br>{{ rate.rate19 }} <br> {{ rate.rate20 }} <br> {{ rate.rate21 }} 
+             <br>{{ rate.rate22 }} <br>  {{ rate.rate23 }} <br> {{ rate.rate24 }} <br>{{ rate.rate25 }} <br>{{ rate.rate26 }} <br>{{ rate.rate27 }} <br>
+             {{ rate.rate28 }} <br>{{ rate.rate29 }} <br>{{ rate.rate30 }} <br> {{ rate.rate31 }} <br> {{ rate.rate32 }}
+            <br>{{ rate.rate33 }} <br>  {{ rate.rate34 }} <br> {{ rate.rate35 }} <br>{{ rate.rate36 }} <br>{{ rate.rate37 }} <br>{{ rate.rate38 }} <br>
+            {{ rate.rate39 }} <br>{{ rate.rate40 }} <br>{{ rate.rate41 }} <br> {{ rate.rate42 }} <br> {{ rate.rate43 }}
+           <br>{{ rate.rate44 }} <br>  {{ rate.rate45 }} <br> {{ rate.rate46 }} <br>{{ rate.rate47 }} <br>{{ rate.rate48 }} <br>{{ rate.rate49 }} <br>
+           {{ rate.rate50 }} <br>{{ rate.rate51 }} <br>{{ rate.rate52 }} <br> {{ rate.rate53 }} <br> {{ rate.rate54 }}
+          <br>{{ rate.rate55 }} <br>  {{ rate.rate56 }} <br> {{ rate.rate57 }} <br>{{ rate.rate58 }} <br>{{ rate.rate59 }} <br>{{ rate.rate60 }} <br>
+          </td>
+            <td>
+              <button class="btn btn-primary" (click)="updaterate4(rate.id, i)">Update</button>
+             
+              <!-- <button class="btn btn-danger" (click)="deletrate3(rate.id)">Delete</button> -->
+            </td>
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<br>
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <h1 class="text-center">SingleXl(32ft)</h1>
+      <form #RateForm5="ngForm" (ngSubmit)="addRate5(rateform5.value)">
+
+        <label class="inp">Rate 1-50</label>
+      <input type="number" id="rate1" class="form-control" name="rate1" ngModel required >
+      <label class="inp">Rate 50-100</label>
+      <input type="number" id="rate2" class="form-control" name="rate2"ngModel required >
+      <label class="inp">Rate 100-150</label>
+      <input type="number" id="rate3" class="form-control"  name="rate3" ngModel required >
+      <label class="inp">Rate 150-200</label>
+       <input type="number" id="rate4" class="form-control" name="rate4" ngModel required >
+      <label class="inp">Rate 200-250</label>
+      <input type="number" id="rate5" class="form-control" name="rate5" ngModel required >
+      <label class="inp">Rate 250-300</label>
+      <input type="number" id="rate6" class="form-control" name="rate6"ngModel required >
+      <label class="inp">Rate 300-350</label>
+      <input type="number" id="rate7" class="form-control" name="rate7" ngModel required >
+      <label class="inp">Rate 350-400</label>
+      <input type="number" id="rate8" class="form-control" name="rate8" ngModel required >
+      <label class="inp">Rate 400-450</label>
+      <input type="number" id="rate8" class="form-control" name="rate9" ngModel required >
+      <label class="inp">Rate 450-500</label>
+      <input type="number" id="rate9" class="form-control"  name="rate10" ngModel required >
+      <label class="inp">Rate 500-550</label>
+      <input type="number" id="rate10" class="form-control" name="rate11" ngModel required >
+      <label class="inp">Rate 550-600</label>
+      <input type="number" id="rate11" class="form-control" name="rate12" ngModel required >
+      <label class="inp">Rate 600-650</label>
+      <input type="number" id="rate12" class="form-control" name="rate13" ngModel required>
+      <label class="inp">Rate 650-700</label>
+      <input type="number" id="rate12" class="form-control" name="rate14" ngModel required>
+      <label class="inp">Rate 700-750</label>
+      <input type="number" id="rate12" class="form-control" name="rate15" ngModel required>
+      <label class="inp">Rate 750-800</label>
+      <input type="number" id="rate12" class="form-control" name="rate16" ngModel required>
+      <label class="inp">Rate 800-850</label>
+      <input type="number" id="rate12" class="form-control"     name="rate17" ngModel required >
+      <label class="inp">Rate 850-900</label>
+      <input type="number" id="rate12" class="form-control" name="rate18" ngModel required>
+      <label class="inp">Rate 900-950</label>
+      <input type="number" id="rate12" class="form-control" name="rate19" ngModel required>
+      <label class="inp">Rate 950-1000</label>
+      <input type="number" id="rate12" class="form-control" name="rate20" ngModel required>
+      <label class="inp">Rate 1000-1050</label>
+      <input type="number" id="rate12" class="form-control" name="rate21" ngModel required>
+      <label class="inp">Rate 1050-1100</label>
+      <input type="number" id="rate12" class="form-control"  name="rate22" ngModel required>
+      <label class="inp">Rate 1100-1150</label>
+      <input type="number" id="rate12" class="form-control" name="rate23" ngModel required>
+      <label class="inp">Rate 1150-1200</label>
+      <input type="number" id="rate12" class="form-control" name="rate24" ngModel required>
+      <label class="inp">Rate 1200-1250</label>
+      <input type="number" id="rate12" class="form-control" name="rate25" ngModel required>
+      <label class="inp">Rate 1250-1300</label>
+      <input type="number" id="rate12" class="form-control" name="rate26" ngModel required>
+      <label class="inp">Rate 1300-1350</label>
+      <input type="number" id="rate12" class="form-control" name="rate27" ngModel required>
+      <label class="inp">Rate 1350-1400</label>
+      <input type="number" id="rate12" class="form-control"   name="rate28" ngModel required>
+      <label class="inp">Rate 1400-1450</label>
+      <input type="number" id="rate12" class="form-control"   name="rate29" ngModel required>
+      <label class="inp">Rate 1450-1500</label>
+      <input type="number" id="rate12" class="form-control"  name="rate30" ngModel required>
+      <label class="inp">Rate 1500-1550</label>
+      <input type="number" id="rate12" class="form-control"  name="rate31" ngModel required>
+      <label class="inp">Rate 1550-1600</label>
+      <input type="number" id="rate12" class="form-control"  name="rate32" ngModel required>
+      <label class="inp">Rate 1600-1650</label>
+      <input type="number" id="rate12" class="form-control"  name="rate33" ngModel required>
+      <label class="inp">Rate 1650-1700</label>
+      <input type="number" id="rate12" class="form-control"  name="rate34"ngModel required>
+      <label class="inp">Rate 1700-1750</label>
+      <input type="number" id="rate12" class="form-control"  name="rate35"ngModel required >
+      <label class="inp">Rate 1750-1800</label>
+      <input type="number" id="rate12" class="form-control"  name="rate36"ngModel required>
+      <label class="inp">Rate 1800-1850</label>
+      <input type="number" id="rate12" class="form-control"  name="rate37"ngModel required>
+      <label class="inp">Rate 1850-1900</label>
+      <input type="number" id="rate12" class="form-control" name="rate38" ngModel required>
+      <label class="inp">Rate 1900-1950</label>
+      <input type="number" id="rate12" class="form-control" name="rate39" ngModel required>
+      <label class="inp">Rate 1950-2000</label>
+      <input type="number" id="rate12" class="form-control"  name="rate40"ngModel required>
+      <label class="inp">Rate 2000-2050</label>
+      <input type="number" id="rate12" class="form-control" name="rate41" ngModel required>
+      <label class="inp">Rate 2050-2100</label>
+      <input type="number" id="rate12" class="form-control" name="rate42" ngModel required>
+      <label class="inp">Rate 2100-2150</label>
+      <input type="number" id="rate12" class="form-control" name="rate43" ngModel required>
+      <label class="inp">Rate 2150-2200</label>
+        <input type="number" id="rate12" class="form-control"  name="rate44"ngModel required >
+      <label class="inp">Rate 2200-2250</label>  
+      <input type="number" id="rate12" class="form-control"  name="rate45"ngModel required>
+      <label class="inp">Rate 2250-2300</label>
+      <input type="number" id="rate12" class="form-control" name="rate46"ngModel required>
+      <label class="inp">Rate 2300-2350</label>
+      <input type="number" id="rate12" class="form-control" name="rate47"ngModel required>
+      <label class="inp">Rate 2350-2400</label>
+      <input type="number" id="rate12" class="form-control" name="rate48" ngModel required>
+      <label class="inp">Rate 2400-2450</label>
+      <input type="number" id="rate12" class="form-control"  name="rate49" ngModel required>
+      <label class="inp">Rate 2450-2500</label>
+      <input type="number" id="rate12" class="form-control" name="rate50" ngModel required>
+      <label class="inp">Rate 2500-2550</label>
+      <input type="number" id="rate12" class="form-control" name="rate51" ngModel required>
+      <label class="inp">Rate 2550-2600</label>
+      <input type="number" id="rate12" class="form-control" name="rate52" ngModel required>
+  
+      <label class="inp">Rate 2600-2650</label>
+      <input type="number" id="rate12" class="form-control" name="rate53" ngModel required>
+      <label class="inp">Rate 2650-2700</label>
+      <input type="number" id="rate12" class="form-control" name="rate54"ngModel required>
+      <label class="inp">Rate 2700-2750</label>
+      <input type="number" id="rate12" class="form-control" name="rate55"ngModel required>
+      <label class="inp">Rate 2750-2800</label>
+      <input type="number" id="rate12" class="form-control" name="rate56" ngModel required>
+      <label class="inp">Rate 2800-2850</label>
+      <input type="number" id="rate12" class="form-control"  name="rate57" ngModel required>
+      <label class="inp">Rate 2850-2900</label>
+      <input type="number" id="rate12" class="form-control" name="rate58" ngModel required>
+      <label class="inp">Rate 2900-2950</label>
+      <input type="number" id="rate12" class="form-control" name="rate59" ngModel required>
+      <label class="inp">Rate 2950-3000</label>
+      <input type="number" id="rate12" class="form-control"  name="rate60" ngModel required> 
+        <button type="submit" class="btn btn-success">{{ editMode5 ? 'Update Rate' : '' }}</button>
+      </form>
+    </div>
+
+    <div class="col-md-6">
+      <h3>Existing Rates:</h3>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Rate Range</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let rate of data5; index as i">
+            <td> {{ rate.rate1 }} <br> {{ rate.rate2 }} <br>{{ rate.rate3 }} <br>{{ rate.rate4 }} <br>{{ rate.rate5 }} <br>
+               {{ rate.rate6 }} <br>{{ rate.rate7 }} <br>{{ rate.rate8 }} <br> {{ rate.rate9 }} <br> {{ rate.rate10 }}
+              <br>{{ rate.rate11 }} <br> {{ rate.rate12 }} <br> {{ rate.rate13 }} <br>{{ rate.rate14 }} <br>{{ rate.rate15 }} <br>{{ rate.rate16 }} <br>
+              {{ rate.rate17 }} <br>{{ rate.rate18 }} <br>{{ rate.rate19 }} <br> {{ rate.rate20 }} <br> {{ rate.rate21 }} 
+             <br>{{ rate.rate22 }} <br>  {{ rate.rate23 }} <br> {{ rate.rate24 }} <br>{{ rate.rate25 }} <br>{{ rate.rate26 }} <br>{{ rate.rate27 }} <br>
+             {{ rate.rate28 }} <br>{{ rate.rate29 }} <br>{{ rate.rate30 }} <br> {{ rate.rate31 }} <br> {{ rate.rate32 }}
+            <br>{{ rate.rate33 }} <br>  {{ rate.rate34 }} <br> {{ rate.rate35 }} <br>{{ rate.rate36 }} <br>{{ rate.rate37 }} <br>{{ rate.rate38 }} <br>
+            {{ rate.rate39 }} <br>{{ rate.rate40 }} <br>{{ rate.rate41 }} <br> {{ rate.rate42 }} <br> {{ rate.rate43 }}
+           <br>{{ rate.rate44 }} <br>  {{ rate.rate45 }} <br> {{ rate.rate46 }} <br>{{ rate.rate47 }} <br>{{ rate.rate48 }} <br>{{ rate.rate49 }} <br>
+           {{ rate.rate50 }} <br>{{ rate.rate51 }} <br>{{ rate.rate52 }} <br> {{ rate.rate53 }} <br> {{ rate.rate54 }}
+          <br>{{ rate.rate55 }} <br>  {{ rate.rate56 }} <br> {{ rate.rate57 }} <br>{{ rate.rate58 }} <br>{{ rate.rate59 }} <br>{{ rate.rate60 }} <br>
+          </td>
+            <td>
+              <button class="btn btn-primary" (click)="updaterate5(rate.id, i)">Update</button>
+             
+              <!-- <button class="btn btn-danger" (click)="deletrate3(rate.id)">Delete</button> -->
+            </td>
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<br>
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <h1 class="text-center">Multiple(32ft)</h1>
+      <form #RateForm6="ngForm" (ngSubmit)="addRate6(rateform6.value)">
+
+        <label class="inp">Rate 1-50</label>
+      <input type="number" id="rate1" class="form-control" name="rate1" ngModel required >
+      <label class="inp">Rate 50-100</label>
+      <input type="number" id="rate2" class="form-control" name="rate2"ngModel required >
+      <label class="inp">Rate 100-150</label>
+      <input type="number" id="rate3" class="form-control"  name="rate3" ngModel required >
+      <label class="inp">Rate 150-200</label>
+       <input type="number" id="rate4" class="form-control" name="rate4" ngModel required >
+      <label class="inp">Rate 200-250</label>
+      <input type="number" id="rate5" class="form-control" name="rate5" ngModel required >
+      <label class="inp">Rate 250-300</label>
+      <input type="number" id="rate6" class="form-control" name="rate6"ngModel required >
+      <label class="inp">Rate 300-350</label>
+      <input type="number" id="rate7" class="form-control" name="rate7" ngModel required >
+      <label class="inp">Rate 350-400</label>
+      <input type="number" id="rate8" class="form-control" name="rate8" ngModel required >
+      <label class="inp">Rate 400-450</label>
+      <input type="number" id="rate8" class="form-control" name="rate9" ngModel required >
+      <label class="inp">Rate 450-500</label>
+      <input type="number" id="rate9" class="form-control"  name="rate10" ngModel required >
+      <label class="inp">Rate 500-550</label>
+      <input type="number" id="rate10" class="form-control" name="rate11" ngModel required >
+      <label class="inp">Rate 550-600</label>
+      <input type="number" id="rate11" class="form-control" name="rate12" ngModel required >
+      <label class="inp">Rate 600-650</label>
+      <input type="number" id="rate12" class="form-control" name="rate13" ngModel required>
+      <label class="inp">Rate 650-700</label>
+      <input type="number" id="rate12" class="form-control" name="rate14" ngModel required>
+      <label class="inp">Rate 700-750</label>
+      <input type="number" id="rate12" class="form-control" name="rate15" ngModel required>
+      <label class="inp">Rate 750-800</label>
+      <input type="number" id="rate12" class="form-control" name="rate16" ngModel required>
+      <label class="inp">Rate 800-850</label>
+      <input type="number" id="rate12" class="form-control"     name="rate17" ngModel required >
+      <label class="inp">Rate 850-900</label>
+      <input type="number" id="rate12" class="form-control" name="rate18" ngModel required>
+      <label class="inp">Rate 900-950</label>
+      <input type="number" id="rate12" class="form-control" name="rate19" ngModel required>
+      <label class="inp">Rate 950-1000</label>
+      <input type="number" id="rate12" class="form-control" name="rate20" ngModel required>
+      <label class="inp">Rate 1000-1050</label>
+      <input type="number" id="rate12" class="form-control" name="rate21" ngModel required>
+      <label class="inp">Rate 1050-1100</label>
+      <input type="number" id="rate12" class="form-control"  name="rate22" ngModel required>
+      <label class="inp">Rate 1100-1150</label>
+      <input type="number" id="rate12" class="form-control" name="rate23" ngModel required>
+      <label class="inp">Rate 1150-1200</label>
+      <input type="number" id="rate12" class="form-control" name="rate24" ngModel required>
+      <label class="inp">Rate 1200-1250</label>
+      <input type="number" id="rate12" class="form-control" name="rate25" ngModel required>
+      <label class="inp">Rate 1250-1300</label>
+      <input type="number" id="rate12" class="form-control" name="rate26" ngModel required>
+      <label class="inp">Rate 1300-1350</label>
+      <input type="number" id="rate12" class="form-control" name="rate27" ngModel required>
+      <label class="inp">Rate 1350-1400</label>
+      <input type="number" id="rate12" class="form-control"   name="rate28" ngModel required>
+      <label class="inp">Rate 1400-1450</label>
+      <input type="number" id="rate12" class="form-control"   name="rate29" ngModel required>
+      <label class="inp">Rate 1450-1500</label>
+      <input type="number" id="rate12" class="form-control"  name="rate30" ngModel required>
+      <label class="inp">Rate 1500-1550</label>
+      <input type="number" id="rate12" class="form-control"  name="rate31" ngModel required>
+      <label class="inp">Rate 1550-1600</label>
+      <input type="number" id="rate12" class="form-control"  name="rate32" ngModel required>
+      <label class="inp">Rate 1600-1650</label>
+      <input type="number" id="rate12" class="form-control"  name="rate33" ngModel required>
+      <label class="inp">Rate 1650-1700</label>
+      <input type="number" id="rate12" class="form-control"  name="rate34"ngModel required>
+      <label class="inp">Rate 1700-1750</label>
+      <input type="number" id="rate12" class="form-control"  name="rate35"ngModel required >
+      <label class="inp">Rate 1750-1800</label>
+      <input type="number" id="rate12" class="form-control"  name="rate36"ngModel required>
+      <label class="inp">Rate 1800-1850</label>
+      <input type="number" id="rate12" class="form-control"  name="rate37"ngModel required>
+      <label class="inp">Rate 1850-1900</label>
+      <input type="number" id="rate12" class="form-control" name="rate38" ngModel required>
+      <label class="inp">Rate 1900-1950</label>
+      <input type="number" id="rate12" class="form-control" name="rate39" ngModel required>
+      <label class="inp">Rate 1950-2000</label>
+      <input type="number" id="rate12" class="form-control"  name="rate40"ngModel required>
+      <label class="inp">Rate 2000-2050</label>
+      <input type="number" id="rate12" class="form-control" name="rate41" ngModel required>
+      <label class="inp">Rate 2050-2100</label>
+      <input type="number" id="rate12" class="form-control" name="rate42" ngModel required>
+      <label class="inp">Rate 2100-2150</label>
+      <input type="number" id="rate12" class="form-control" name="rate43" ngModel required>
+      <label class="inp">Rate 2150-2200</label>
+        <input type="number" id="rate12" class="form-control"  name="rate44"ngModel required >
+      <label class="inp">Rate 2200-2250</label>  
+      <input type="number" id="rate12" class="form-control"  name="rate45"ngModel required>
+      <label class="inp">Rate 2250-2300</label>
+      <input type="number" id="rate12" class="form-control" name="rate46"ngModel required>
+      <label class="inp">Rate 2300-2350</label>
+      <input type="number" id="rate12" class="form-control" name="rate47"ngModel required>
+      <label class="inp">Rate 2350-2400</label>
+      <input type="number" id="rate12" class="form-control" name="rate48" ngModel required>
+      <label class="inp">Rate 2400-2450</label>
+      <input type="number" id="rate12" class="form-control"  name="rate49" ngModel required>
+      <label class="inp">Rate 2450-2500</label>
+      <input type="number" id="rate12" class="form-control" name="rate50" ngModel required>
+      <label class="inp">Rate 2500-2550</label>
+      <input type="number" id="rate12" class="form-control" name="rate51" ngModel required>
+      <label class="inp">Rate 2550-2600</label>
+      <input type="number" id="rate12" class="form-control" name="rate52" ngModel required>
+  
+      <label class="inp">Rate 2600-2650</label>
+      <input type="number" id="rate12" class="form-control" name="rate53" ngModel required>
+      <label class="inp">Rate 2650-2700</label>
+      <input type="number" id="rate12" class="form-control" name="rate54"ngModel required>
+      <label class="inp">Rate 2700-2750</label>
+      <input type="number" id="rate12" class="form-control" name="rate55"ngModel required>
+      <label class="inp">Rate 2750-2800</label>
+      <input type="number" id="rate12" class="form-control" name="rate56" ngModel required>
+      <label class="inp">Rate 2800-2850</label>
+      <input type="number" id="rate12" class="form-control"  name="rate57" ngModel required>
+      <label class="inp">Rate 2850-2900</label>
+      <input type="number" id="rate12" class="form-control" name="rate58" ngModel required>
+      <label class="inp">Rate 2900-2950</label>
+      <input type="number" id="rate12" class="form-control" name="rate59" ngModel required>
+      <label class="inp">Rate 2950-3000</label>
+      <input type="number" id="rate12" class="form-control"  name="rate60" ngModel required> 
+        <button type="submit" class="btn btn-success">{{ editMode6 ? 'Update Rate' : '' }}</button>
+      </form>
+    </div>
+
+    <div class="col-md-6">
+      <h3>Existing Rates:</h3>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Rate Range</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let rate of data6; index as i">
+            <td> {{ rate.rate1 }} <br> {{ rate.rate2 }} <br>{{ rate.rate3 }} <br>{{ rate.rate4 }} <br>{{ rate.rate5 }} <br>
+               {{ rate.rate6 }} <br>{{ rate.rate7 }} <br>{{ rate.rate8 }} <br> {{ rate.rate9 }} <br> {{ rate.rate10 }}
+              <br>{{ rate.rate11 }} <br> {{ rate.rate12 }} <br> {{ rate.rate13 }} <br>{{ rate.rate14 }} <br>{{ rate.rate15 }} <br>{{ rate.rate16 }} <br>
+              {{ rate.rate17 }} <br>{{ rate.rate18 }} <br>{{ rate.rate19 }} <br> {{ rate.rate20 }} <br> {{ rate.rate21 }} 
+             <br>{{ rate.rate22 }} <br>  {{ rate.rate23 }} <br> {{ rate.rate24 }} <br>{{ rate.rate25 }} <br>{{ rate.rate26 }} <br>{{ rate.rate27 }} <br>
+             {{ rate.rate28 }} <br>{{ rate.rate29 }} <br>{{ rate.rate30 }} <br> {{ rate.rate31 }} <br> {{ rate.rate32 }}
+            <br>{{ rate.rate33 }} <br>  {{ rate.rate34 }} <br> {{ rate.rate35 }} <br>{{ rate.rate36 }} <br>{{ rate.rate37 }} <br>{{ rate.rate38 }} <br>
+            {{ rate.rate39 }} <br>{{ rate.rate40 }} <br>{{ rate.rate41 }} <br> {{ rate.rate42 }} <br> {{ rate.rate43 }}
+           <br>{{ rate.rate44 }} <br>  {{ rate.rate45 }} <br> {{ rate.rate46 }} <br>{{ rate.rate47 }} <br>{{ rate.rate48 }} <br>{{ rate.rate49 }} <br>
+           {{ rate.rate50 }} <br>{{ rate.rate51 }} <br>{{ rate.rate52 }} <br> {{ rate.rate53 }} <br> {{ rate.rate54 }}
+          <br>{{ rate.rate55 }} <br>  {{ rate.rate56 }} <br> {{ rate.rate57 }} <br>{{ rate.rate58 }} <br>{{ rate.rate59 }} <br>{{ rate.rate60 }} <br>
+          </td>
+            <td>
+              <button class="btn btn-primary" (click)="updaterate6(rate.id, i)">Update</button>
+             
+              <!-- <button class="btn btn-danger" (click)="deletrate3(rate.id)">Delete</button> -->
+            </td>
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+  <br>
+
+  <br>
+   <app-footer></app-footer>
+
+
+

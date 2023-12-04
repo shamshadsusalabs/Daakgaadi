@@ -1,0 +1,199 @@
+
+  
+
+ <div class="flex flex-wrap items-center" id="bookingSection" >
+    <div class="w-full md:w-5/12 px-4 mr-auto ml-auto" style="margin-top: 10px;margin-bottom: 100px ; min-width: 290px;">
+      <h3 style="font-size: 40px; text-align: left;">Get an estimate    </h3> 
+      <div class="row">
+        <div style="width: 200px;">
+          <div class="product-item"  *ngIf="type=='t1'"   >
+            <a class="product-img">
+              <img class="photo" src="./assets/img/t1.svg" alt="" />
+              
+            </a>
+            <div >
+              <p style="font-size: 8px; color:grey;">750kg</p>
+              <p>Tata Ace            </p>
+              <p style="font-size: 12px; color:blue;">Book Now</p>
+                 
+                
+               </div>
+            
+          </div>
+          <div class="product-item"   *ngIf="type=='t2'"  >
+            <a class="product-img">
+              <img class="photo" src="./assets/img/t2.svg" alt="" />
+              
+            </a>
+            <div >
+              <p style="font-size: 8px; color:grey;">750kg</p>
+              <p>Ace (Helper)            </p>
+              <p style="font-size: 12px; color:blue;">Book Now</p>
+                 
+                
+                
+               </div>
+          </div>
+          <div class="product-item"    *ngIf="type=='t3'"  >
+            <a class="product-img">
+              <img class="photo" src="./assets/img/t3.svg" alt="" />
+              
+            </a>
+            <div >
+              <p style="font-size: 8px; color:grey;">500kg</p>
+              <p>3 Wheeler            </p>
+              <p style="font-size: 12px; color:blue;">Book Now</p>
+                 
+                
+                
+               </div>
+          </div>
+          <div class="product-item"   *ngIf="type=='t4'">
+            <a class="product-img">
+              <img class="photo" src="./assets/img/t3.svg" alt="" />
+              
+            </a>
+            <div >
+              <p style="font-size: 8px; color:grey;">500kg</p>
+              <p>3 Wheeler (Helper)</p>
+              <p style="font-size: 12px; color:blue;">Book Now</p>
+                 
+                
+                
+               </div>
+          </div>
+          <div class="product-item"  *ngIf="type=='t5'" >
+            <a class="product-img">
+              <img class="photo" src="./assets/img/t5.svg" alt="" />
+              
+            </a>
+            <div >
+              <p style="font-size: 8px; color:grey;">2500kg</p>
+              <p>Tata 407
+              </p>
+              <p style="font-size: 12px; color:blue;">Book Now</p>
+                 
+                
+               </div>
+            
+          </div>
+          <div class="product-item" *ngIf="type=='t6'" >
+            <a class="product-img">
+              <img class="photo" src="./assets/img/t6.svg" alt="" />
+              
+            </a>
+            <div >
+              <p style="font-size: 8px; color:grey;">1250kg</p>
+              <p>Pickup 8ft            </p>
+              <p style="font-size: 12px; color:blue;">Book Now</p>
+                 
+                
+                
+               </div>
+          </div>
+
+          <select name="cars" id="cars">
+            <option value="open">Open</option>
+            <option value="close">Close</option>
+          </select>
+          
+        </div>
+        
+          <div class="cont" style="width: 400px;">
+
+            <div class="curvy-box">
+              
+              <label class="lbl" for="email">Name:</label>
+              <input class="inp" type="text" id="name1" [(ngModel)]="name1" />
+      
+              <label class="lbl" for="email">Email:</label>
+              <input class="inp" type="email" id="email1" [(ngModel)]="email1" />
+              <label class="lbl" for="contact">Contact:</label>
+              <input class="inp" type="text" id="contact1" [(ngModel)]="contact1" /> 
+              <!-- <label class="lbl" for="contact"> From:</label>
+              <input class="inp" type="text" id="from" [(ngModel)]="from" />
+      
+              <label class="lbl" for="contact"> To:</label>
+              <input class="inp" type="text" id="to" [(ngModel)]="to" /> -->
+              <div>
+                <label >FROM:</label>
+                <input id="from" type="text" placeholder="From" class="form-control">
+                <label>TO:</label>
+                <input id="to" type="text" placeholder="To" class="form-control">
+                <button (click)="calcRoute()">Calculate Route</button>
+                <div id="googleMap"></div>
+                 <div id="output"></div> 
+
+                 
+              
+
+
+              <div class="row">
+                <!-- <div class="width:80px">
+                  <label class="lbl" for="contact"> Type:</label>
+                  <input class="inp" type="text" id="area" [(ngModel)]="area" />
+    
+                </div> -->
+
+              
+                
+
+              </div>
+               <!-- <tbody>
+                <tr *ngFor="let rate of data;index as i">
+                 <td> {{ rate.rate1 }}--<td> {{ rate.rate2 }} </td> -->
+                   <!-- <td class="btn btn-primary"> <a (click)="updaterate(rate.id,i)">Update</a></td>
+                  <td class="btn btn-primary"> <a (click)="deletrate(rate.id)">Delete</a></td> -->
+                 <!-- </tr>
+              </tbody>  -->
+
+             
+              <!-- <label class="lbl" for="actual">Actual Weight (kg):</label>
+              <input class="inp" type="number" id="actual" [value]="actual" (input)="actual" />
+      
+              <label class="lbl" for="boxes">no. of Boxes</label>
+              <input class="inp" type="number" id="boxes" [value]="boxes" (input)="boxes"  /> -->
+      
+              
+              <input type="checkbox" [(ngModel)]="termsAndConditionsChecked" id="termsAndConditionsCheckbox" />
+              <label for="termsAndConditionsCheckbox">I have read and agree to the Terms and Conditions</label>
+              
+              <a (click)="toggleForm()" style="color:blue">see term and condition</a>
+              <div *ngIf="showForm1">
+                <p>Terms & Conditions:      Note::
+            
+                  * Transit Time: Transit excludes the date of booking.
+                  The following goods are not acceptable for movement - Jewelry, Arms & Ammunition, 
+                  Hazardous materials like Crackers, Explosives, Chemicals, Battery Acids, and Inflammable Oils; 
+                  such as Diesel, Petrol, Kerosene, Gasoline, Narcotics & Counter brand Items.
+                  
+                  * Freight Refund: The Refund of freight may be entertained subject to Force Majeures such as Strikes Bandh, Elections, Rains, Flood, Accidents, Festivals and other natural calamities and any other events beyond the control of Daak Gaadi etc. , including the routine and or sudden inspection carried out by the Authorities of the concerned departments such as Excise, Customs, Sales Tax, Gold Control, NDPS, Municipal, RTA, and any other authorities competent to inspect goods along with vehicle, which is beyond the control of Daak Gaadi.
+                   Your Price: The rates shown are indicative and not the final price. It includes Freight, ROV, Basic, DPH/ATF, Non-Metro, and ESS charges. The final price would depend on the exact volume, the value of the shipment and if any special service charges, etc. The charges are exclusive of Taxes
+                   Household goods  & Bikes Packing, Loading, and Local Pickup Charges are extra. bike packing Charges Rs. 500 & per box Rs.150 , docket charges 500.  local pickup charges 1500 bikes and household goods. GST 18 and Surcharge 10 Percent extra on Total Billing.
+                  We take complete 1 days for packing and loading. Please
+                  keep all your valuable items like: Cash,Jewellery,Your personal documents in your custody. Pefect Box,
+                  Plastic foldable box, plastic crates, LED Box, Fabric sheet and all Reusable packing materials are the
+                  property of the DAAK GAADI.after unpacking these would be taken back. Otherwise, equivalent cost of
+                  materials will be recovered from the client. All Payment in favour of M/S DAAK GAADI. We would
+                  request to pay us 50% of the all charges in advance along with your order and the balance on complete
+                  packing at the loading point. Law and Jurisdiction: This contract shall be governed and construed in accordance with the law of
+                  India and all disputes and claims are subject to the exclusive and irrevocable jurisdiction of the Court in Gurugram Haryana only and no other court shall have jurisdiction.   For further Terms and Conditions please refer to Daak Gaadi Docket's Terms and Conditions.</p>
+              </div>
+            
+              <br>
+
+              <button (click)=" booknow()">Book Now</button>
+              <!-- <p style="padding: 12px;" id="estimateResult">kg.{{ estimateResult }}</p>
+              
+              <p style="padding: 12px;" id="priceResult">Estimated Price: Rs{{ price }}</p>
+      
+               -->
+              <!-- <button (click)="sendConfirmationEmail()">Confirm Booking</button> -->
+            </div>
+          </div>
+      </div>
+     
+    </div>
+  </div>
+  
+  

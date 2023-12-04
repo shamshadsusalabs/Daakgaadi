@@ -1,0 +1,248 @@
+
+
+
+<div class="mt-3">
+<app-navbar></app-navbar>
+</div>
+
+<a routerLink="../ratedashboard" style="
+background-color: #4285f4 !important;
+color: #ffffff !important;
+border: 2px solid #4285f4 !important;
+border-radius: 5px;
+display: inline-block;
+padding: 15px 30px;
+text-decoration: none;
+font-weight: bold;
+font-size: 20px;
+transition: background-color 0.3s;
+width: 200px;
+text-align: center;
+position: absolute;
+
+left:5%;
+top:15%;
+">Back</a>
+
+
+
+
+        <div class="flex flex-wrap items-center" id="bookingSection">
+          <div class="w-full md:w-5/12 px-4 mr-auto ml-auto" style="margin-top: 10px;margin-bottom: 100px ; width: 700px;">
+            <h5 style="font-size: 30px; text-align: left;">Add Route </h5>
+            <div style="display: flex;"></div>
+            <div class="row">
+          
+                <div class="cont" style="width: 400px;">
+        
+                  <form #AddRoute="ngForm" (ngSubmit)="addRoute(addroute.value)">
+                  <div class="curvy-box">
+        
+                    <div class="row" style="width: 600px">
+                    
+                      <div style="width: 200px;">
+                      
+                        
+                          <label for="pickup">Pickup State:</label>
+                        <select id="state" class="form-control" name="pstate" ngModel  [(ngModel)]="pselectedState" (change)="onStateChange()" required>
+                          <option value="Andhra pradesh">Andhra Pradesh</option>
+                          <option value="Arunachal pradesh">Arunachal Pradesh</option>
+                          <option value="Assam">Assam</option>
+                          <option value="Andaman and Nicobar">Andaman and Nicobar</option>
+                          <option value="Bihar">Bihar</option>
+                          <option value="Chhattisgarh">Chhattisgarh</option>
+                          <option value="Chhattisgarh">Chandigarh</option>
+                          <option value="Goa">Goa</option>
+                          <option value="Gujarat">Gujarat</option>
+                          <option value="Haryana">Haryana</option>
+                          <option value="Delhi">Delhi</option>
+                          <option value="Daman and Diu">Daman and Diu</option>
+                          <option value="HimachalPradesh">Himachal Pradesh</option>
+                          <option value="JammuandKashmir">Jammu and Kashmir</option>
+                          <option value="Jharkhand">Jharkhand</option>
+                          <option value="karnataka">Karnataka</option>
+                          <option value="kerala">Kerala</option>
+                          <option value="Ladakh">Ladakh</option>
+                          <option value="Lakshadweep">Lakshadweep</option>
+                          <option value="MadhyaPradesh">Madhya Pradesh</option>
+                          <option value="Maharashtra">Maharashtra</option>
+                          <option value="Manipur">Manipur</option>
+                          <option value="Meghalaya">Meghalaya</option>
+                          <option value="Mizoram">Mizoram</option>
+                          <option value="Nagaland">Nagaland</option>
+                          <option value="Odisha">Odisha</option>
+                          <option value="Puducherry">Puducherry</option>
+                          <option value="Punjab">Punjab</option>
+                          <option value="Rajasthan">Rajasthan</option>
+                          <option value="Sikkim">Sikkim</option>
+                          <option value="Tamilnadu">Tamil Nadu</option>
+                          <option value="Telangana">Telangana</option>
+                          <option value="Tripura">Tripura</option>
+                          <option value="Uttarpradesh">Uttar Pradesh</option>
+                          <option value="Uttarakhand">Uttarakhand</option>
+                          <option value="Westbengal">West Bengal</option>
+                        </select>
+                      </div>
+        
+                      <div style="width: 150px;">
+                        <label for="pickup">Pickup City:</label>
+                        <select id="pcity" class="form-control" name="pcity" ngModel required>
+                          <option *ngFor="let city of pfilteredCities" [ngValue]="city.city">{{ city.city }}</option>
+                        </select>
+                      </div>
+                     
+                    
+                      <div class="row" style="width: 700px">
+        
+                        <div style="width: 200px;">
+                          <label for="drop">Drop State:</label>
+                          <select id="state" class="form-control" name="dstate"  [(ngModel)]="dselectedState" (change)="donStateChange()" ngModel  required>
+                            <option value="Andhra pradesh">Andhra Pradesh</option>
+        <option value="Arunachal pradesh">Arunachal Pradesh</option>
+        <option value="Assam">Assam</option>
+        <option value="Andaman and Nicobar">Andaman and Nicobar</option>
+        <option value="Bihar">Bihar</option>
+        <option value="Chhattisgarh">Chhattisgarh</option>
+        <option value="Chhattisgarh">Chandigarh</option>
+        <option value="Goa">Goa</option>
+        <option value="Gujarat">Gujarat</option>
+        <option value="Haryana">Haryana</option>
+        <option value="Delhi">Delhi</option>
+        <option value="Daman and Diu">Daman and Diu</option>
+        <option value="HimachalPradesh">Himachal Pradesh</option>
+        <option value="JammuandKashmir">Jammu and Kashmir</option>
+        <option value="Jharkhand">Jharkhand</option>
+        <option value="karnataka">Karnataka</option>
+        <option value="kerala">Kerala</option>
+        <option value="Ladakh">Ladakh</option>
+        <option value="Lakshadweep">Lakshadweep</option>
+        <option value="MadhyaPradesh">Madhya Pradesh</option>
+        <option value="Maharashtra">Maharashtra</option>
+        <option value="Manipur">Manipur</option>
+        <option value="Meghalaya">Meghalaya</option>
+        <option value="Mizoram">Mizoram</option>
+        <option value="Nagaland">Nagaland</option>
+        <option value="Odisha">Odisha</option>
+        <option value="Puducherry">Puducherry</option>
+        <option value="Punjab">Punjab</option>
+        <option value="Rajasthan">Rajasthan</option>
+        <option value="Sikkim">Sikkim</option>
+        <option value="Tamilnadu">Tamil Nadu</option>
+        <option value="Telangana">Telangana</option>
+        <option value="Tripura">Tripura</option>
+        <option value="Uttarpradesh">Uttar Pradesh</option>
+        <option value="Uttarakhand">Uttarakhand</option>
+        <option value="Westbengal">West Bengal</option>
+                            </select>
+                        </div>
+        
+        
+                        <div style="width: 200px;">
+                          <div style="width: 130px;">
+                            <label for="drop">Drop City</label>
+                            <select id="city" class="form-control" name="dcity" ngModel  required>
+                              <option *ngFor="let city of dfilteredCities" [ngValue]="city.city">{{ city.city }}</option>
+                            </select>
+                          </div>
+                        </div>
+        
+        
+                      </div>
+        
+        
+        
+        
+        
+        
+        
+        
+                    </div>
+        
+        
+                   
+               -
+                    <label class="lbl" for="contact">AMOUNT</label>
+                    <input class="inp" type="text" id="amount" name="amount" ngModel   required />
+        
+                    <label class="lbl" for="contact"> ESTIMATE DELIVERY DAYS</label>
+                    <input class="inp" type="text" id="days"  name="days" ngModel required />
+        
+                  
+        
+                    <div style="width: 200px;">
+                      <label class="lbl" for="contact"> TYPE</label>
+                      <select class="inp"  name="type" ngmodel required [(ngModel)]="selectedShipmentType" (change)="toggleAdditionalInput()">
+                          <option value="standard">Standard</option>
+                          <option value="oda">ODA</option>
+                      </select>
+                  </div>
+          
+                  <div *ngIf="selectedShipmentType === 'oda'" style="width: 200px;">
+                      <label class="lbl" for="additionalInfo">Oda Amount</label>
+                      <input class="inp" type="text" id="additionalInfo" name="odaamount"  ngmodel   required [(ngModel)]="additionalInfo" />
+                  </div>
+        
+                   
+                  <button type="submit" class="btn btn-success">{{ editMode ? 'Update Route' : 'AddRoute' }}</button>
+              
+                    
+                  </div>
+              </form>
+                </div>
+              
+              </div>
+        
+            </div>
+          </div>
+          
+          <br>
+          <br>
+         
+      
+          <div class="container-fluid">
+            <input type="text" [(ngModel)]="filterText" placeholder="Filter...">
+              <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Pickup State</th>
+                      <th>Pickup City</th>
+                      <th>Drop State</th>
+                      <th>Drop City</th>
+                      <th>Amount</th>
+                      <th>Delivery Days</th>
+                      <th>Type</th>
+                      <th>Oda Amount</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                  
+                    <tr *ngFor="let route of filteredData; index as i">
+                      <td>{{ route.pstate }}</td>
+                      <td>{{ route.pcity }}</td>
+                      <td>{{ route.dstate }}</td>
+                      <td>{{ route.dcity }}</td>
+                      <td>{{ route.amount }}</td>
+                      <td>{{ route.days }}</td>
+                      <td>{{ route.type }}</td>
+                      <td>{{ route.odaamount }}</td>
+                      <td>
+                        
+                         <button class="btn btn-primary" (click)="updateroute(route.id, i)">Edit</button> 
+                        
+                        <button class="btn btn-danger" (click)="deletroute(route.id)">Delete</button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+
+<br>
+            <div style="position:relative; top:100%">
+              <app-footer></app-footer>
+            </div>
+              
+
+            
+
